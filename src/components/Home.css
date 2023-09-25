@@ -1,0 +1,7 @@
+.bgimg{
+    background-image: url(../images/black\ girl.jpg);
+    height: 50%;
+}
+.vertical{
+    writing-mode: vertical-lr;
+}
