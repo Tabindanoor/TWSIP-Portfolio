@@ -8,7 +8,7 @@ import res from '../images/res.pdf'
 import {BubblyLink} from 'react-bubbly-transitions'
 import { Link } from 'react-router-dom';
 import './About.css'
-
+import {dev} from "../images/dev.jpg"
 
 
 const EmailButton = ({ email }) => {
@@ -286,13 +286,15 @@ const handleMouseLeave = () => {
                 <div className='lg:w-[50%] xl:w-[45%] w-full md:mx-auto justify-center center items-center  lg:mx-16 '>
                     <img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/info-img.jpg" alt=""
                     className='rounded-full lg:rounded-none mx-auto' />
+                    
                 </div>
 
 {/* introduction  */}
                 <div  className='lg:w-[50%] xl:w-[60%] w-[100%] py-5'>
                     <p className='text-green-600 text-3xl'>Who am i?</p><br />
                     <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor Certified Ethical Hacker and Web Developer </p> <br />
-                    <p className='text-zinc-500 '>I am a freelancer based in the Faisalabad and i have been building noteworthy UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+                    {/* <p className='text-zinc-500 '>I am a freelancer based in the Faisalabad and i have been building noteworthy UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p> */}
+                    <p className='text-zinc-400 '>Hello, I'm Tabinda Noor, a skilled MERN stack developer. Proficient in MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and responsive web applications. With a passion for creating seamless user experiences and a commitment to staying updated with the latest technologies, I bring a valuable blend of expertise in both front-end and back-end development. I look forward to leveraging my skills to contribute to innovative projects and drive impactful solutions.</p>
                     <br />
                     <hr className=' border-t-[2] border-t-gray-500' />
                     <br />
@@ -342,7 +344,7 @@ const handleMouseLeave = () => {
 
 
 {/* <!-- Facebook --> */}
-<a href="https://www.facebook.com/"   rel="noreferrer" target='_blank'>
+<a href="https://www.facebook.com/profile.php?id=100080879324307"   rel="noreferrer" target='_blank'>
 <svg
 
   xmlns="http://www.w3.org/2000/svg"
@@ -378,7 +380,7 @@ const handleMouseLeave = () => {
 </a>
 
 {/* <!-- Instagram --> */}
-        <a href="https://www.instagram.com/"   rel="noreferrer" target='_blank'>
+        {/* <a href="https://www.instagram.com/"   rel="noreferrer" target='_blank'>
 <svg
 
   xmlns="http://www.w3.org/2000/svg"
@@ -388,7 +390,7 @@ const handleMouseLeave = () => {
   <path
     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
 </svg>
-</a>
+</a> */}
         
                         </div>
                     </div>

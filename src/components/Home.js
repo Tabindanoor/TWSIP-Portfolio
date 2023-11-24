@@ -3,111 +3,54 @@ import white_linux from "../images/white_linux.png"
 import Typewriter from "typewriter-effect";
 import './Home.css'
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 
 
 const Home = () => {
     // nav button state
-    const [isOpen, setIsOpen] = useState(false);
-
-
-  return (   
-
-
-    <div>
+    // const [isOpen, setIsOpen] = useState(false);
+  return (  
+      <div>
         <div className=' mx-auto bg-[url("../images/black girl.jpg")] bg-cover bgimg bg-center h-[100%] px-16 py-5'>
-                {/* navbar */}
-                
-
-
-                
-
-
-                <nav className=" ">
-      <div className=" mx-auto my-auto ">
-        <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center ">
-            <img className="w-20 mr-4" src={white_linux} alt="Logo" />
-            <p className='text-white rounded-md font-semibold'>TNM</p>
-          </div>
-          <div className="hidden md:-ml-4 md:flex md:space-x-0  lg:space-x-6 sm:-space-x-3  lg:ml-3 text-[20px] justify-around">
-            <div className="text-white  px-3 py-2 rounded-md font-semibold cursor-pointer">
-            <Link  to='/about' className="bubbly-link">About</Link></div>
-            <div className="text-white  px-3 py-2 rounded-md font-semibold cursor-pointer">
-            <Link  to='/resume' className="bubbly-link">Resume</Link>
-            </div>
-            <div className="text-white  px-3 py-2 rounded-md font-semibold cursor-pointer">
-            <Link  to='/portfolio' className="bubbly-link">Portfolio</Link>              
-            </div>
-            <div className="text-white  px-3 py-2 rounded-md font-semibold cursor-pointer">
-            <Link  to='/blog' className="bubbly-link">Blog</Link>
-            </div>
-            <div className="text-white  px-3 py-2 rounded-md font-semibold cursor-pointer">
-            <Link  to='/contact' className="bubbly-link">Contact</Link>
-            </div>
-                                     
-          </div>
-          <div className="-mr-2 flex items-center md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-white-100 focus:outline-none focus:bg-white-100 focus:text-white transition duration-150 ease-in-out"
-              aria-label="Main menu"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="pt-2 pb-4 font-medium ">
-            <div  className="block text-white px-3 py-2 rounded-md text-lg cursor-pointer"><Link  to='/about' className="bubbly-link">About</Link></div>
-            <div  className="block text-white px-3 py-2 rounded-md text-lg cursor-pointer"><Link  to='/resume' className="bubbly-link">Resume</Link></div>
-            <div  className="block text-white px-3 py-2 rounded-md text-lg cursor-pointer"><Link  to='/portfolio' className="bubbly-link">Portfolio</Link></div>
-            <div  className="block text-white px-3 py-2 rounded-md text-lg cursor-pointer"><Link  to='/blog' className="bubbly-link">Blog</Link></div>
-            <div  className="block text-white px-3 py-2 rounded-md text-lg cursor-pointer"><Link  to='/contact' className="bubbly-link">Contact</Link></div>
-          </div>
-        </div>
-      )}
-    </nav>
+          <Navbar/>
 
 {/* end of navbar */}
 
 <div className="flex flex-col items-center justify-center h-screen" style={{ fontFamily: "poppins" }}>
   <div className="text-white text-center m-auto">
-    <p className="text-4xl md:text-4xl lg:text-6xl font-extrabold">Tabinda Noor Muslim</p>
+    <p className="text-4xl md:text-4xl lg:text-6xl font-extrabold">Tabinda Noor </p>
     <br />
     <br />
     <div className="flex text-center justify-center font-semibold  text-2xl sm:text-3xl">
       <p>I'm a&nbsp;</p>
       <Typewriter
-        onInit={(typewriter) => {
-          typewriter
-            .pauseFor(500)
-            .typeString("Developer")
-            .pauseFor(500)
-            .deleteAll()
-            .typeString("Designer")
-            .pauseFor(500)
-            .deleteAll()
-            .typeString("Freelancer")
-            .pauseFor(500)
-            .start();
-        }}
+     
+     options={{
+      strings: ['Developer', 'Designer','Freelancer'],
+      autoStart: true,
+      loop: true,
+    }}
+
+        // onInit={(typewriter) => {
+        //   typewriter
+        //     .pauseFor(500)
+        //     .typeString("Developer")
+        //     .pauseFor(500)
+
+        //     .deleteAll()
+        //     .typeString("Designer")
+        //     .pauseFor(500)
+        //     .deleteAll()
+        //     .typeString("Freelancer")
+        //     .pauseFor(500)
+        //     .start();
+        // }}
+
+
       />
+
     </div>
   </div>
 </div>
@@ -116,7 +59,7 @@ const Home = () => {
             {/* languages */}
             <div className='vertical flex '>
             <p className='mb-5'>ENG</p>
-            <p>JAP</p>
+            {/* <p>JAP</p> */}
             </div>
             {/* social media icons */}
             <div className='vertical flex '>
@@ -135,7 +78,7 @@ const Home = () => {
 
 
 {/* <!-- Facebook --> */}
-<a href="https://www.facebook.com/"   rel="noreferrer" target='_blank'>
+<a href="https://www.facebook.com/profile.php?id=100080879324307"   rel="noreferrer" target='_blank'>
 <svg
 
   xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +90,7 @@ const Home = () => {
 </svg>
 </a>
 {/* <!-- Linkedin --> */}
-<a href="https://www.linkedin.com/in/tabinda-noor-54b478246/"   rel="noreferrer" target='_blank'>
+<a href="https://www.linkedin.com/in/tabinda-noor-935429237/"   rel="noreferrer" target='_blank'>
 <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-5 w-5 bg-white rounded-sm p-[2px] mb-5"
@@ -171,7 +114,7 @@ const Home = () => {
 </a>
 
 {/* <!-- Instagram --> */}
-        <a href="https://www.instagram.com/"   rel="noreferrer" target='_blank'>
+        {/* <a href="https://www.instagram.com/"   rel="noreferrer" target='_blank'>
 <svg
 
   xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +124,7 @@ const Home = () => {
   <path
     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
 </svg>
-</a>
+</a> */}
             </div>
             
         </div>
