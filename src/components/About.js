@@ -30,27 +30,27 @@ const EmailButton = ({ email }) => {
 const testimonial = [
   {
     img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
-    name:"Tabinda Noor",
+    name:"Roshni",
     title:"Customer",
-    description:"Her testimonial speaks volumes about the impact our services have had on his life. We are thrilled to have been able to make a difference!!"
+    description:"Her expertise in full-stack development ensured the seamless creation of our complex application. Timely delivery, transparent communication, and a commitment to quality make them our go-to development partner"
   },
   {
     img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
     name:"Talha Muslim",
     title:"Business Analyst",
-    description:"highlights the ease and convenience our product brings to her daily life. We are proud to have provided a solution that simplifies things for her!!"
+    description:"The team's dedication to our project and their technical prowess set them apart. Highly recommended"
   },
   {
     img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
     name:"Noor",
     title:"Client",
-    description:"reflects the powerful impact our services have had on his business. We are delighted to have contributed to his success!"
+    description:"Her attention to detail, creativity, and ability to capture our brand essence exceeded our expectations. We look forward to future collaborations"
   },
   {
     img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
     name:"muslim",
     title:"product Manager",
-    description:"demonstrates the exceptional quality of our offerings. We strive to exceed expectations and are thrilled to have provided a positive experience!!"
+    description:"She demonstrated the exceptional quality of our offerings. We strive to exceed expectations and are thrilled to have provided a positive experience!!"
   },
 ]
 
@@ -71,18 +71,6 @@ const handleNext = () => {
    const  cardRef = useRef();
   //  green progress line state
 const [progress, setProgress] = useState(0);
-
-
-//   greenBottom
-const greenBottom=()=>{
-    cardRef.current.style.borderBottom = '2px solid #00FF00';
-}
-
-// no hover no green bottom
-const handleMouseLeave = () => {
-    cardRef.current.style.borderBottom = '2px solid #000000';
-  };
-
 
   // object data for the cards 
   const myCards = [
@@ -132,8 +120,8 @@ const handleMouseLeave = () => {
 
             <div
             key={index}
-            className=" cursor-pointer mx-5 ">
-              <div onMouseOver={greenBottom} onMouseLeave={handleMouseLeave} ref={cardRef} className="bg-slate-900  max-w-sm p-6  border-none shadow-2xl hover:border-b-2 border-green-600  dark:bg-gray-800 dark:border-gray-700">
+            className=" cursor-pointer mx-5 " >
+              <div  ref={cardRef} className="bg-slate-900  max-w-sm p-6   shadow-2xl hover:border-b-2 hover:border-green-600  dark:bg-gray-800 dark:border-gray-700">
      
      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
 
@@ -234,7 +222,7 @@ const handleMouseLeave = () => {
   
                     </li>
                 </ul>
-                <EmailButton email={pricing.email} />
+                <EmailButton email={pricing.email}  />
                 {/* <button  className="text-white bg-green-600  cursor-pointer rounded-full  font-medium  text-sm px-5 py-2.5 text-center "> <a href="mailto:tabindalaptop@gmail.com">Get started</a></button> */}
               
             </div>
@@ -416,8 +404,10 @@ const handleMouseLeave = () => {
                  
                 </div>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 justify-between mx-6 md:mx-12  '>
-                        {cardData}
+                <div className='grid md:grid-cols-2 xl:grid-cols-3 justify-between mx-6 md:mx-12  ' >
+                        
+                       
+                          {cardData}
                     </div>
 
 <br /><br />

@@ -18,17 +18,17 @@ const Resume = () => {
   {
     title:"Matriculation",
     subtitle:"Muslim Girls School / 2016 - 2018",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    description:"Matriculation with Computer Science, scored 94% in exams. Learned the basic of C language and Object Oriented Programming.",
   },
   {
-    title:"Intermediate",
+    title:"ICS",
     subtitle:"Kips College / 2018 - 2020",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    description:"Intermediate in Computer Science, scored 92% in exams. Learned C++ language and practically worked on OOP concepts.",
   },
   {
-    title:"Bachelors degree",
-    subtitle:"GC University / 2020 - Present",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    title:"BSSE",
+    subtitle:"GC University Faisalabad / 2020 - 2024",
+    description:"Bachelors in Software Engineering, learned Software Development. Learned enhanced concepts in programming. Selected MERN as a future field.",
   }
  ]
 
@@ -55,18 +55,18 @@ const Resume = () => {
 
  const experience = [
   {
-    title:"Software Engineer",
-    subtitle:"Programmer / sep 2022 - Oct 2022",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    title:"Programmmer",
+    subtitle:"Corvit Systems Faisalabad",
+    description:"Using python programming Language, Manage the instances of AWS using python scripts .",
   },
   {
-    title:"Cyber Security Analyst",
-    subtitle:"GCUF / Aug 2022 - sep 2022",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    title:"MERN Bootcamper ",
+    subtitle:"Techloset Solutions / 02-20-2023 - 24-08-2023",
+    description:"Maintainable code using HTML, CSS, and React JS along  with the Tailwind CSS.  ",
   }, {
-    title:"Networking",
-    subtitle:"UAF / july 2022 - july 2022",
-    description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.",
+    title:"Web Developer Instructor ",
+    subtitle:"ITEC Systems Faisalabad / 25-08-2022 - 01-02-2023 ",
+    description:"With the experience as a web instructor, I have gained invaluable insights into the art of guiding and     educating aspiring web developers.",
   }
   
  ]
@@ -127,9 +127,9 @@ const ExperienceCard = ()=>{
                          {/* education and experience  */}
 
               
-  <div className="flex-col flex lg:flex-row  justify-between  mx-5 lg:mx-36">
+  <div className="flex-col flex lg:flex-row   justify-between  mx-5 lg:mx-36">
   {/* education */}
-  <div className='mx-5 '>
+  <div className='mx-5 md:w-[50%] '>
     <div className=" w-full ">
       <p className='font-semibold text-4xl'>Education</p> <br />
       <EducationCard/>
@@ -137,7 +137,7 @@ const ExperienceCard = ()=>{
   </div>
     
     {/* experience */}
-    <div className='mx-5'>
+    <div className='mx-5 md:w-[50%] '>
     <div className=" w-full ">
       <p className='font-semibold text-4xl'>Experience</p> <br />
       <ExperienceCard/>
@@ -150,8 +150,9 @@ const ExperienceCard = ()=>{
              {/*level of knowledge  */}
              <div className='mx-5 lg:mx-36'>
               <div className='mx-5'>
+        
                <p>My level of knowledge in some tools</p>
-
+<br />
               <p className='text-4xl font-semibold'>My Skills</p>
               </div> <br /> <br />
              
@@ -173,19 +174,7 @@ const ExperienceCard = ()=>{
 </div>
               </div>
               <br />
-           
-
-    <div>
-      <div className="flex justify-between mb-1 mx-5">
-  <span className="text-base font-medium text-white">Ethical Hacking</span>
-  <span className="text-sm font-medium text-white">80%</span>
-</div>
-<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
-  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
-</div>
-    </div> <br />
-
-<div>
+              <div>
   <div className="flex justify-between mb-1 mx-5">
   <span className="text-base font-medium text-white">JavaScript</span>
   <span className="text-sm font-medium text-white">90%</span>
@@ -197,11 +186,78 @@ const ExperienceCard = ()=>{
 </div>
 
 <br />
+<div>
+  <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">MUI</span>
+  <span className="text-sm font-medium text-white">80%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+
+</div>
+
+<br />
+<div>
+  <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">FireBase</span>
+  <span className="text-sm font-medium text-white">80%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+
+</div>
+
+<br />
+
+
+    <div>
+      <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">TypeScript</span>
+  <span className="text-sm font-medium text-white">80%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+    </div> <br />
+
+
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Git / GitHub</span>
+  <span className="text-sm font-medium text-white">90%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[90%]" ></div>
+</div>
+              </div>
+
+              <br />
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Networking</span>
+  <span className="text-sm font-medium text-white">80%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+              </div>
+
              </div>
 
 
              <div className='w-full'>
 
+              <div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">OOP</span>
+  <span className="text-sm font-medium text-white">80%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+              </div><br />
               <div>
                    <div className="flex justify-between mb-1 mx-5">
   <span className="text-base font-medium text-white">Bootstrap</span>
@@ -234,6 +290,37 @@ const ExperienceCard = ()=>{
 </div>
 
 </div>
+<br />
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Node JS / Express JS</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+              </div>
+              <br />
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Mongo DB</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+              </div>
+              <br />
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Ethical Hacking</span>
+  <span className="text-sm font-medium text-white">75%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[75%]" ></div>
+</div>
+              </div>
+              <br />
 <br /><br /><br /><br /><br />
 
 
@@ -252,9 +339,9 @@ const ExperienceCard = ()=>{
 
       <div className='mx-2 lg:w-[50%]'>
         <br /> <br />
-          <p className='text-3xl font-semibold '>Take a tour of my office</p> <br /> <br />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum quasi assumenda culpa praesentium consectetur voluptatibus expedita. Voluptatem tempore, aspernatur rem facilis, distinctio nemo! Odio velit, nemo dolorem voluptas!</p><br />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui aspernatur unde mollitia, in laborum.</p>
+          <p className='text-3xl font-semibold '>Know More About Me</p> <br /> <br />
+          <p>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
+          <p>I love to solve complex problems, i love traveeling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
       </div>
       <div className='mx-3 lg:w-[50%]'>
       {/* <div class="aspect-w-16 aspect-h-9">
@@ -269,7 +356,9 @@ const ExperienceCard = ()=>{
         allowFullScreen
       ></iframe>
     </div> */}
-<iframe  className='  w-full  h-[315px]' src="https://www.youtube.com/embed/doteMqP6eSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <iframe  className='  w-full  h-[315px]' width="560" height="315" src="https://www.youtube.com/embed/suiOEagu6-M?si=SzIcl6WspQrFpdc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{/* <iframe  className='  w-full  h-[315px]' src="https://www.youtube.com/embed/doteMqP6eSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
       </div>
 </div>  <br /><br /><br /><br />
 
