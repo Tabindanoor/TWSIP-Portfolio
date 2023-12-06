@@ -341,7 +341,7 @@ const ExperienceCard = ()=>{
         <br /> <br />
           <p className='text-3xl font-semibold '>Know More About Me</p> <br /> <br />
           <p>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
-          <p>I love to solve complex problems, i love traveeling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
+          <p>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
       </div>
       <div className='mx-3 lg:w-[50%]'>
       {/* <div class="aspect-w-16 aspect-h-9">
@@ -357,7 +357,7 @@ const ExperienceCard = ()=>{
       ></iframe>
     </div> */}
     
-    <iframe  className='  w-full  h-[315px]' width="560" height="315" src="https://www.youtube.com/embed/suiOEagu6-M?si=SzIcl6WspQrFpdc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe  className=' border-2 border-white w-full  h-[315px]' width="560" height="315" src="https://www.youtube.com/embed/suiOEagu6-M?si=SzIcl6WspQrFpdc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {/* <iframe  className='  w-full  h-[315px]' src="https://www.youtube.com/embed/doteMqP6eSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
       </div>
 </div>  <br /><br /><br /><br />

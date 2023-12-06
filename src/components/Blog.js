@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom';
+import glasses from "../images/glasses.png"
 const Blog = () => {
     const [progress, setProgress] = useState(0);
     // animated line 
@@ -13,39 +14,45 @@ const Blog = () => {
 
    const blogs =[
     {
-        img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-1.jpg",
-        date:"11 Dec, 20",
+        img:"https://technofeat.net/wp-content/uploads/2023/09/T-2-1.webp",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2022",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     },
     {
         img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-2.jpg",
-        date:"11 Dec, 20",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2022",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     },
     {
         img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-3.jpg",
-        date:"11 Dec, 20",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2023",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     }
     ,
     {
         img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-4.jpg",
-        date:"11 Dec, 20",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2023",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     },
     {
         img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-5.jpg",
-        date:"11 Dec, 20",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2023",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     },
     {
         img:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/post-6.jpg",
-        date:"11 Dec, 20",
+        link:"https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/",
+        date:"11 Dec, 2023",
         title:"Top tools for Photographers",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas."
     }
@@ -55,16 +62,20 @@ const Blog = () => {
    return blogs.map((blog,index)=>{
         return (
             <div key={index} className="max-w-sm mx-auto overflow-hidden shadow-md">
-            <div className="relative">
+        <Link  to={blog.link}>    <div className="relative">
                <img
               className="w-full"
               src={blog.img}
               alt="BlogImage"
             /> 
-            <button className="absolute bottom-0 left-0 p-2 text-white bg-green-500 rounded-md">{blog.date}</button>
+            <a href='https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/' className="absolute bottom-0 left-0 p-2 text-white bg-green-500 rounded-md">{blog.date}</a>
                 
               </div>
-              <div className='text-white'>
+              
+
+              </Link>
+               <div className='text-white' >
+{/* {blog.link} */}
                   <p className='text-2xl font-bold'>{blog.title}</p>
                   <p>{blog.description}</p>
               </div>

@@ -20,13 +20,13 @@ const Home = () => {
 
 <div className="flex flex-col items-center justify-center h-screen" style={{ fontFamily: "poppins" }}>
   <div className="text-white text-center m-auto">
-    <p className="text-4xl md:text-4xl lg:text-6xl font-extrabold">Tabinda Noor </p>
+    <p className="text-4xl md:text-4xl font-serif lg:text-6xl font-extrabold">Tabinda Noor </p>
     <br />
     <br />
-    <div className="flex text-center justify-center font-semibold  text-2xl sm:text-3xl">
+    <div className="flex text-center justify-center font-sans font-semibold  text-2xl sm:text-3xl">
       <p>I'm a&nbsp;</p>
       <Typewriter
-     
+    
      options={{
       strings: ['Developer', 'Designer','Freelancer'],
       autoStart: true,
