@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useRef } from 'react'
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+import Footer from './Footer';
 // import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -129,7 +130,7 @@ const sendEmail = (e) => {
     <br /><br /><br />
 
 
-
+<Footer/>
 
             </div>
   )

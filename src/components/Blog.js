@@ -160,7 +160,7 @@ const Blog = () => {
 <br />
 <div className='grid  md:grid-cols-2 lg:grid-cols-3 mx-8 lg:mx-24 xl:mx-36 gap-x-4 gap-y-20'>
 <div className="max-w-sm mx-auto overflow-hidden shadow-md">
-          <div className="relative">
+        <a href='https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
               src="https://technofeat.net/wp-content/uploads/2023/09/T-2-1.webp"
@@ -171,12 +171,13 @@ const Blog = () => {
               </div>
               
 
-            
+              </a >
                <div className='text-white' >
 {/* {blog.link} */}
                   <p className='text-2xl font-bold'> 5 Reasons Why Should Robots go to Space Instead of Humans</p>
-                  <p>Why Should Robots go to Space Instead of Humans? Robots can be a very good fit to be sent in space instead of humans. In the modern era of artificial intelligence and robots, machines have made life more easy and efficient. Humans are always interested in finding and exploring the depths of space.</p>
+                  <p>Why Should Robots go to Space Instead of Humans? Robots can be a very good fit to be sent in space instead of humans..</p>
               </div>
+          
             
           </div>
 </div>
