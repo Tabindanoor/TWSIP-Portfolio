@@ -3,6 +3,8 @@ import { useState } from 'react';
 import {useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import project from "../images/project.png"
+import Footer from './Footer';
+import girl from "../images/girl.jpeg"
 
 
 
@@ -55,7 +57,7 @@ const Portfolio = () => {
   const products=[
       {   id:'1',
           title:"Label tag Mockup",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-1.jpg",
+          image:girl,
           link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-1.jpg",
           category: 'Design'
       
@@ -111,7 +113,7 @@ const Portfolio = () => {
 
      
       return (
-  <div className='bg-black text-white '>
+  <div className='bg-black text-white h-full  '>
         {/* cross icon */}
             
             <div className='sticky font-bold top-6 right-6 z-10 lg:mx-5 xl:mx-16   mx-auto'>
@@ -181,6 +183,7 @@ const Portfolio = () => {
       
 
     </div>
+    <Footer />
     </div>
   )
       }

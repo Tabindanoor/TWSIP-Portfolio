@@ -11,6 +11,9 @@ import './About.css'
 import {dev} from "../images/dev.jpg"
 import girl from "../images/girl.jpeg"
 import girlpc from "../images/girlpc.png"
+import boy1 from "../images/boy.png"
+import boy2 from "../images/boy.jfif"
+import Footer from './Footer';
 
 
 const EmailButton = ({ email }) => {
@@ -31,25 +34,25 @@ const EmailButton = ({ email }) => {
 
 const testimonial = [
   {
-    img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
+    img: girl,
     name:"Roshni",
     title:"Customer",
     description:"Her expertise in full-stack development ensured the seamless creation of our complex application. Timely delivery, transparent communication, and a commitment to quality make them our go-to development partner"
   },
   {
-    img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
+    img: boy1,
     name:"Talha Muslim",
     title:"Business Analyst",
     description:"The team's dedication to our project and their technical prowess set them apart. Highly recommended"
   },
   {
-    img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
+    img: girlpc,
     name:"Noor",
     title:"Client",
     description:"Her attention to detail, creativity, and ability to capture our brand essence exceeded our expectations. We look forward to future collaborations"
   },
   {
-    img: "https://kaleidoscopic-pie-2341a3.netlify.app/template/img/client-3.jpg",
+    img: boy2,
     name:"muslim",
     title:"product Manager",
     description:"She demonstrated the exceptional quality of our offerings. We strive to exceed expectations and are thrilled to have provided a positive experience!!"
@@ -176,70 +179,70 @@ const [progress, setProgress] = useState(0);
 
 
 
-  const PricingCards=()=>{
-    return pricing.map((item,index)=>{
-      return(
+  // const PricingCards=()=>{
+  //   return pricing.map((item,index)=>{
+  //     return(
       
-        <div key={index} className=" px-4 lg:px-6 ">
-        <div className="">
-            {/* <!-- Pricing Card --> */}
+  //       <div key={index} className=" px-4 lg:px-6 ">
+  //       <div className="">
+  //           {/* <!-- Pricing Card --> */}
     
-            <div className=" justify-center flex flex-col p-5 md:p-20 lg:p-12 xl:p-24   mx-auto max-w-lg text-center text-white bg-gray-900  rounded-lg shadow dark:border-gray-600  dark:bg-gray-800 ">
-              {/* <img src={item.image} alt="" /> */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 mx-auto  bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
-            <br />
-                <h3 className="mb-4 text-2xl font-semibold">{item.title}</h3>
-                <div className="flex justify-center items-baseline my-8">
-                    <span className="mr-2 text-5xl font-extrabold">{item.price}</span>
-                    <span className="text-gray-500 dark:text-gray-400">/hour</span>
-                </div>
-                {/* <!-- List --> */}
-                <ul  className="mb-8 space-y-4 text-left">
-                    <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
-                        {/* <!-- Icon --> */}
+  //           <div className=" justify-center flex flex-col p-5 md:p-20 lg:p-12 xl:p-24   mx-auto max-w-lg text-center text-white bg-gray-900  rounded-lg shadow dark:border-gray-600  dark:bg-gray-800 ">
+  //             {/* <img src={item.image} alt="" /> */}
+  //             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 mx-auto  bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
+  //           <br />
+  //               <h3 className="mb-4 text-2xl font-semibold">{item.title}</h3>
+  //               <div className="flex justify-center items-baseline my-8">
+  //                   <span className="mr-2 text-5xl font-extrabold">{item.price}</span>
+  //                   <span className="text-gray-500 dark:text-gray-400">/hour</span>
+  //               </div>
+  //               {/* <!-- List --> */}
+  //               <ul  className="mb-8 space-y-4 text-left">
+  //                   <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
+  //                       {/* <!-- Icon --> */}
                         
-                        <span>{item.description.mobile}</span>
-                    </li>
-                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
-                        {/* <!-- Icon --> */}
+  //                       <span>{item.description.mobile}</span>
+  //                   </li>
+  //                   <li className="flex mx-auto text-center justify-center items-center space-x-3">
+  //                       {/* <!-- Icon --> */}
                         
-                        <span>{item.description.responsive}</span>
-                    </li>
-                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
-                        {/* <!-- Icon --> */}
+  //                       <span>{item.description.responsive}</span>
+  //                   </li>
+  //                   <li className="flex mx-auto text-center justify-center items-center space-x-3">
+  //                       {/* <!-- Icon --> */}
                         
                            
-                        <span>{item.description.database}</span>
-                    </li>
-                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
-                        {/* <!-- Icon --> */}
-                        <span>{item.description.web}</span>
+  //                       <span>{item.description.database}</span>
+  //                   </li>
+  //                   <li className="flex mx-auto text-center justify-center items-center space-x-3">
+  //                       {/* <!-- Icon --> */}
+  //                       <span>{item.description.web}</span>
                         
                        
-                    </li>
-                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
-                        {/* <!-- Icon --> */}
+  //                   </li>
+  //                   <li className="flex mx-auto text-center justify-center items-center space-x-3">
+  //                       {/* <!-- Icon --> */}
                         
-                        <span>{item.description.support}</span>
+  //                       <span>{item.description.support}</span>
   
-                    </li>
-                </ul>
-                <a href="mailto:tabindanoor415@gmail.com">Get started</a>
+  //                   </li>
+  //               </ul>
+  //               <a href="mailto:tabindanoor415@gmail.com">Get started</a>
                
 
-                <EmailButton email={pricing.email}   />
+  //               <EmailButton email={pricing.email}   />
                 
-                {/* <button  className="text-white bg-green-600  cursor-pointer rounded-full  font-medium  text-sm px-5 py-2.5 text-center "> <a href="mailto:tabindalaptop@gmail.com">Get started</a></button> */}
+  //               {/* <button  className="text-white bg-green-600  cursor-pointer rounded-full  font-medium  text-sm px-5 py-2.5 text-center "> <a href="mailto:tabindalaptop@gmail.com">Get started</a></button> */}
               
-            </div>
-                <br /> <br />   
-        </div>
-    </div>
+  //           </div>
+  //               <br /> <br />   
+  //       </div>
+  //   </div>
   
         
-        )
-        })
-  }
+  //       )
+  //       })
+  // }
 
                                                                      //  { returning the Component}
   return (
@@ -279,12 +282,7 @@ const [progress, setProgress] = useState(0);
             <div className='flex-col  justify-between xl:mx-36  mx-12 flex lg:flex-row '>
                 {/* girl picture  */}
                 <div className='lg:w-[50%] xl:w-[45%] w-full md:mx-auto justify-center center items-center  lg:mx-16 '>
-                    {/* <img src="https://kaleidoscopic-pie-2341a3.netlify.app/template/img/info-img.jpg" alt=""
-                    className='rounded-full lg:rounded-none mx-auto' /> */}
-
-{/* <img src={girl} alt=""
-                    className='rounded-full lg:rounded-none mx-auto' /> */}
-                    
+                   
 <img src={girlpc} alt=""
                     className='rounded-full lg:rounded-none mx-auto lg:mt-10' />
                 </div>
@@ -469,15 +467,171 @@ const [progress, setProgress] = useState(0);
 
     </div>
 
-    <div className='grid md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 mx-6 lg:mx-8 '>
-  <PricingCards/>
-</div>
-
-
     
 
         <br /><br /><br />
-        
+
+
+        <div className='grid md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 mx-6 lg:mx-8 '>
+
+        <div className=" px-4 lg:px-6 ">
+        <div className="">
+            {/* <!-- Pricing Card --> */}
+    
+            <div className=" justify-center flex flex-col p-5 md:p-20 lg:p-12 xl:p-24   mx-auto max-w-lg text-center text-white bg-gray-900  rounded-lg shadow dark:border-gray-600  dark:bg-gray-800 ">
+              {/* <img src={item.image} alt="" /> */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 mx-auto  bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
+            <br />
+                <h3 className="mb-4 text-2xl font-semibold">Standard</h3>
+                <div className="flex justify-center items-baseline my-8">
+                    <span className="mr-2 text-5xl font-extrabold">$20</span>
+                    <span className="text-gray-500 dark:text-gray-400">/hour</span>
+                </div>
+                {/* <!-- List --> */}
+                <ul  className="mb-8 space-y-4 text-left">
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
+                       
+                        <span>Mobile App Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>Responsive Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                           
+                        <span>Database Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        <span>Web Design</span>
+                        
+                       
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>24/7 Support</span>
+  
+                    </li>
+                </ul>
+                {/* <a href="mailto:tabindanoor415@gmail.com">Get started</a> */}
+               
+
+                <EmailButton email={pricing.email}   />
+             
+            </div>
+                <br /> <br />   
+        </div>
+    </div>
+
+    <div className=" px-4 lg:px-6 ">
+        <div className="">
+            {/* <!-- Pricing Card --> */}
+    
+            <div className=" justify-center flex flex-col p-5 md:p-20 lg:p-12 xl:p-24   mx-auto max-w-lg text-center text-white bg-gray-900  rounded-lg shadow dark:border-gray-600  dark:bg-gray-800 ">
+              {/* <img src={item.image} alt="" /> */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 mx-auto  bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
+            <br />
+                <h3 className="mb-4 text-2xl font-semibold">Basic</h3>
+                <div className="flex justify-center items-baseline my-8">
+                    <span className="mr-2 text-5xl font-extrabold">$40</span>
+                    <span className="text-gray-500 dark:text-gray-400">/hour</span>
+                </div>
+                {/* <!-- List --> */}
+                <ul  className="mb-8 space-y-4 text-left">
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
+                       
+                        <span>Mobile App Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>Responsive Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                           
+                        <span>Database Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        <span>Web Design</span>
+                        
+                       
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>24/7 Support</span>
+  
+                    </li>
+                </ul>
+
+                <EmailButton email={pricing.email}   />
+                
+            </div>
+                <br /> <br />   
+        </div>
+    </div>
+
+
+     <div className=" px-4 lg:px-6 ">
+        <div className="">
+            {/* <!-- Pricing Card --> */}
+    
+            <div className=" justify-center flex flex-col p-5 md:p-20 lg:p-12 xl:p-24   mx-auto max-w-lg text-center text-white bg-gray-900  rounded-lg shadow dark:border-gray-600  dark:bg-gray-800 ">
+              {/* <img src={item.image} alt="" /> */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-wordpress  h-12 w-12 mx-auto  bg-dark text-green-600" viewBox="0 0 16 16"> <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/> <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/> <pat fillRule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/> </svg>
+            <br />
+                <h3 className="mb-4 text-2xl font-semibold">Premium</h3>
+                <div className="flex justify-center items-baseline my-8">
+                    <span className="mr-2 text-5xl font-extrabold">$60</span>
+                    <span className="text-gray-500 dark:text-gray-400">/hour</span>
+                </div>
+                {/* <!-- List --> */}
+                <ul  className="mb-8 space-y-4 text-left">
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
+                       
+                        <span>Mobile App Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>Responsive Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                           
+                        <span>Database Design</span>
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        <span>Web Design</span>
+                        
+                       
+                    </li>
+                    <li className="flex mx-auto text-center justify-center items-center space-x-3">
+                        {/* <!-- Icon --> */}
+                        
+                        <span>24/7 Support</span>
+  
+                    </li>
+                </ul>
+
+                <EmailButton email={pricing.email}   />
+               
+            </div>
+                <br /> <br />   
+        </div>
+    </div>
+        </div>
+
+<Footer/>
 
         </div>   
     </div>
