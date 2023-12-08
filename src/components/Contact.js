@@ -72,24 +72,24 @@ const sendEmail = (e) => {
         <div className='flex-col flex lg:flex-row mx-5   lg:mx-36 justify-between '>
 
           {/* message me */}
-          <div className='lg:w-[60%] mx-12'>
+          <div className='lg:w-[60%] mx-5  sm:mx-12'>
             <h1 className='text-2xl font-bold'>Message Me</h1><br />
               <form action=""  ref={form} onSubmit={sendEmail} className='bg-black'>
-                <div className=' w-full flex justify-between '>
+                <div className=' w-full sm:flex justify-between  '>
                    <input type="text" name="user_name" placeholder='Name' className='w-full bg-gray-900 px-5 py-4  my-2 border-b-2 border-transparent focus:border-green-500 focus:outline-none' />
-                   <input type="email"  name="user_email" id=""  placeholder='Email' className='w-full bg-gray-900 px-5 py-4 ml-7 my-2 border-b-2 border-transparent focus:border-green-500 focus:outline-none'/>
+                   <input type="email"  name="user_email" id=""  placeholder='Email' className='w-full bg-gray-900 px-5 py-4 sm:ml-7 my-2 border-b-2 border-transparent focus:border-green-500 focus:outline-none'/>
                 </div>
                <input className='w-full border-b-2 border-transparent focus:border-green-500 focus:outline-none bg-gray-900 px-5 py-4 my-2' type="text" placeholder='Subject' name="subject" id="" />
                <textarea name="message" className='w-full bg-gray-900 px-5 py-4  my-2 border-b-2 border-transparent focus:border-green-500 focus:outline-none' placeholder='Message' id="" cols="" rows="5"></textarea>
-               <button className='bg-green-600 text-white rounded-full px-8 py-3 ' type="submit" value="Send">Send Message</button>
+               <button className='bg-green-600 text-white rounded-full px-8 py-1 sm:py-3 ' type="submit" value="Send">Send Message</button>
               </form>
           </div>
               {/* contact  */}
-              <div className=' lg:w-[40%] mx-12 lg:mx-0'>
+              <div className=' lg:w-[40%] lg:mx-0'>
                 <h1 className='text-2xl font-bold '>Contact Info</h1><br />
                 <p className='text-lg '>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
                 <div className='flex mt-4'>
-                <div className='vertical flex '>
+                <div className='vertical sm:flex hidden '>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-16">
     <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 2c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 12c-1.105 0-2-.895-2-2 0-2.205-1.795-4-4-4s-4 1.795-4 4c0 1.105-.895 2-2 2h-2v2h16v-2h-2z" />
   </svg>

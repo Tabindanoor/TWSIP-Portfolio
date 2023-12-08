@@ -1,14 +1,8 @@
 import React from 'react'
 import { useEffect, useState, useRef } from 'react';
-import Slider from 'react-slick';
-import { BsArrowRight } from "react-icons/bs";
-import { BsArrowLeft } from "react-icons/bs";
-import { AiOutlineClose } from 'react-icons/ai';
 import res from '../images/res.pdf'
-import {BubblyLink} from 'react-bubbly-transitions'
 import { Link } from 'react-router-dom';
 import './About.css'
-import {dev} from "../images/dev.jpg"
 import girl from "../images/girl.jpeg"
 import girlpc from "../images/girlpc.png"
 import boy1 from "../images/boy.png"
@@ -301,7 +295,7 @@ const [progress, setProgress] = useState(0);
                             <p className='mr-4'>Name:</p>
                             <p>Tabinda Noor</p>
                         </div>
-                        <div className='flex'>
+                        <div className='sm:flex '>
                         <p className='mr-4'>Email:</p>
                       <p>tabindanoor415@gmail.com</p>
                         </div>

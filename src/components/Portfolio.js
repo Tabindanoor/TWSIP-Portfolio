@@ -2,9 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 import {useEffect} from 'react'
 import { Link } from 'react-router-dom';
-import project from "../images/project.png"
 import Footer from './Footer';
-import girl from "../images/girl.jpeg"
+import weather from "../images/weather.png"
+import text from "../images/text.png"
+import mern from "../images/mernpr.png"
+import todo from "../images/todo.png"
+import figma from "../images/figma.png"
+import efigma from "../images/efigma.png"
 
 
 
@@ -26,14 +30,14 @@ const Card = ({ title, image, link }) => {
       onMouseLeave={handleMouseLeave}
     >
       <img
-        className="w-full h-full object-cover"
+        className="h-[300px] object-cover"
         src={image}
         alt="Product"
       />
       {isHovered && (
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-90 flex flex-col items-center justify-center">
           <h3 className="text-white text-lg font-bold">{title}</h3>
-          <a href={link} className='text-green-500'> more info</a><br />
+          <a href={link} className='text-green-500'> More info</a><br />
         </div>
       )} 
     </div>
@@ -56,47 +60,47 @@ const Portfolio = () => {
 
   const products=[
       {   id:'1',
-          title:"Label tag Mockup",
-          image:girl,
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-1.jpg",
-          category: 'Design'
+          title:"Text Analyzer",
+          image:text,
+          link:"https://github.com/Tabindanoor/TextAnalyzer",
+          category: 'React Apps'
       
       },
       {  id:'2',
-          title:"3D Bag Mockup",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-2.jpg",
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-2.jpg",
-          category: 'Design'
+          title:"Weather App",
+          image:weather,
+          link:"https://github.com/Tabindanoor/WeatherappInReact",
+          category: 'React Apps'
       
       },
       {
           id:'3',
-          title:"Modern Bag Mockup",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-3.jpg",
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-3.jpg",
-          category: 'Photos'
+          title:"Image to Text, Audio, Video & pdf",
+          image:mern,
+          link:"https://github.com/Tabindanoor/image-to-text-audio-video-",
+          category: 'React with Database'
       
       },
       {  id:'4',
-          title:"Cofee Cup Design",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-4.jpg",
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-4.jpg",
-          category: 'brand'
+          title:"Figma To React",
+          image:figma,
+          link:"https://github.com/Tabindanoor/landingPageReact",
+          category: 'Figma To React'
       
       },
       {     id:'5',
-          title:"T-shirt Design",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-5.jpg",
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-5.jpg",
-          category: 'brand'
+          title:"Figma to Rect - E-learning",
+          image:efigma,
+          link:"https://github.com/techloset/E-Learning-App/",
+          category: 'Figma To React'
       
       },
       {
           id:'6',
-          title:"Packaging Box Mockup",
-          image:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-6.jpg",
-          link:"https://kaleidoscopic-pie-2341a3.netlify.app/template/img/item-6.jpg",
-          category: 'Photos'
+          title:"Todo With Firebase",
+          image:todo,
+          link:"https://github.com/Tabindanoor/Todo-List-using-Firebase",
+          category: 'React with Database'
       
       },
   ]
@@ -145,7 +149,7 @@ const Portfolio = () => {
            <br /><br />
            
            <div className='mx-auto text-center '>
-            <ul className='flex text-center justify-center '>
+            <ul className='sm:flex text-center justify-center '>
             <button
           className={`mr-2  ${selectedCategory === 'all' ? 'text-green-500 hover:underline' : ''}`}
           onClick={() => handleCategoryClick('all')}
@@ -153,25 +157,26 @@ const Portfolio = () => {
           All
         </button>
                 <button
-          className={`mr-2  mx-5 ${selectedCategory === 'brand' ? 'text-green-500 hover:underline' : ''}`}
-          onClick={() => handleCategoryClick('brand')}
+          className={`mr-2  mx-5 ${selectedCategory === 'Figma To React' ? 'text-green-500 hover:underline' : ''}`}
+          onClick={() => handleCategoryClick('Figma To React')}
         >
-          Brand
+          Figma To React
         </button>
                 <button
-          className={`mr-2  mx-5 ${selectedCategory === 'Design' ? 'text-green-500 hover:underline' : ''}`}
-          onClick={() => handleCategoryClick('Design')}
+          className={`mr-2  mx-5 ${selectedCategory === 'React Apps' ? 'text-green-500 hover:underline' : ''}`}
+          onClick={() => handleCategoryClick('React Apps')}
         >
-          Design
+          React Apps
         </button>
                 <button
-          className={`mr-2  mx-5 ${selectedCategory === 'Photos' ? 'text-green-500 hover:underline' : ''}`}
-          onClick={() => handleCategoryClick('Photos')}
+          className={`mr-2  mx-5 ${selectedCategory === 'React with Database' ? 'text-green-500 hover:underline' : ''}`}
+          onClick={() => handleCategoryClick('React with Database')}
         >
-          Photos
+          React with Database
         </button>
             </ul>
            </div>
+           
 <br /> <br /><br />
 
 

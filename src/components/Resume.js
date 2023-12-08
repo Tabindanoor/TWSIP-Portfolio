@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import mern from "../images/mern.jpg"
+import Footer from './Footer';
 const Resume = () => {
     const [progress, setProgress] = useState(0);
     // animated line 
@@ -56,7 +57,7 @@ const Resume = () => {
  const experience = [
   {
     title:"Programmmer",
-    subtitle:"Corvit Systems Faisalabad",
+    subtitle:"Corvit Systems Faisalabad / 25-07-2022 - 20-08-2022",
     description:"Using python programming Language, Manage the instances of AWS using python scripts .",
   },
   {
@@ -67,6 +68,11 @@ const Resume = () => {
     title:"Web Developer Instructor ",
     subtitle:"ITEC Systems Faisalabad / 25-08-2022 - 01-02-2023 ",
     description:"With the experience as a web instructor, I have gained invaluable insights into the art of guiding and     educating aspiring web developers.",
+  },
+  {
+    title:"Selenium with JAVA training ",
+    subtitle:"HCC TECHNOLOGY FOUNDATION / JULY 2023 - SEPT 2023 ",
+    description:"With the experience trainee, I have gained expertise in web scraping using JAVA and python. Learned Testing techniques on Web Applications",
   }
   
  ]
@@ -342,6 +348,7 @@ const ExperienceCard = ()=>{
           <p className='text-3xl font-semibold '>Know More About Me</p> <br /> <br />
           <p>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
           <p>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
+          <p>I have also joined many remote internships which help me to enhance my skills in the Development.</p>
       </div>
       <div className='mx-3 lg:w-[50%]'>
       
@@ -351,7 +358,7 @@ const ExperienceCard = ()=>{
 {/* <iframe  className='  w-full  h-[315px]' src="https://www.youtube.com/embed/doteMqP6eSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
       </div>
 </div>  <br /><br /><br /><br />
-
+<Footer/>
           
             </div>
 

@@ -6,7 +6,7 @@ const CopyrightYear = () => {
     const currentYear = new Date().getFullYear();
   
     return (
-      <div className='text-center '>
+      <div className='text-center text-white'>
         &copy; {currentYear} Made By Tabindanoor❤️
       </div>
     );
