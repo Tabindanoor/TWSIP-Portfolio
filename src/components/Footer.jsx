@@ -16,7 +16,7 @@ const CopyrightYear = () => {
 const Footer = () => {
   return (
     <div className='bg-black'>
-<div className='bg-black text-white py-14 text-base  lg:p-12  xl:pl-[65px]  xl:pr-[96px] 2xl:pl-[106px] 2xl:pr-[187px]'>
+<div className='bg-black text-white py-14 text-base p-4 xl:p-12   xl:pl-[65px]  xl:pr-[96px] 2xl:pl-[106px] 2xl:pr-[187px]'>
                 <div className='flex justify-between  list-none max-lg:flex-col max-lg:gap-6 text-white items-center'>
                     <div >
                         {/* <li className='mb-6'> <img  className="alex" src={footer}   alt='alex'/></li> */}

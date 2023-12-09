@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState, useRef } from 'react';
-import res from '../images/res.pdf'
+import res from '../images/My CV (2).pdf'
 import { Link } from 'react-router-dom';
 import './About.css'
 import girl from "../images/girl.jpeg"
@@ -8,6 +8,7 @@ import girlpc from "../images/girlpc.png"
 import boy1 from "../images/boy.png"
 import boy2 from "../images/boy.jfif"
 import Footer from './Footer';
+import profile from '../images/profile.jpg';
 
 
 const EmailButton = ({ email }) => {
@@ -71,6 +72,25 @@ const handleNext = () => {
   //  green progress line state
 const [progress, setProgress] = useState(0);
 
+
+
+  const [birthdate, setBirthdate] = useState('2002-03-21'); // Replace with your actual birthdate
+
+  const calculateAge = () => {
+    const birthdateDate = new Date(birthdate);
+    const today = new Date();
+
+    let age = today.getFullYear() - birthdateDate.getFullYear();
+
+    if (
+      today.getMonth() < birthdateDate.getMonth() ||
+      (today.getMonth() === birthdateDate.getMonth() && today.getDate() < birthdateDate.getDate())
+    ) {
+      age -= 1;
+    }
+
+    return age;
+  };
   // object data for the cards 
   const myCards = [
     {
@@ -275,39 +295,39 @@ const [progress, setProgress] = useState(0);
             {/* who am i  */}
             <div className='flex-col  justify-between xl:mx-36  mx-12 flex lg:flex-row '>
                 {/* girl picture  */}
-                <div className='lg:w-[50%] xl:w-[45%] w-full md:mx-auto justify-center center items-center  lg:mx-16 '>
+                <div className=' lg:block lg:w-[50%] xl:w-[45%] w-full md:mx-auto justify-center center items-center  lg:mx-16 '>
                    
-<img src={girlpc} alt=""
-                    className='rounded-full lg:rounded-none mx-auto lg:mt-10' />
+<img src={profile} alt=""
+                    className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto lg:mt-10' />
                 </div>
 
 {/* introduction  */}
                 <div  className='lg:w-[50%] xl:w-[60%] w-[100%] py-5'>
-                    <p className='text-green-600 text-3xl'>Who am i?</p><br />
+                    <p className='text-green-600 text-3xl'>Who am i ..?</p><br />
                     <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor Certified Ethical Hacker and Web Developer </p> <br />
                     {/* <p className='text-zinc-500 '>I am a freelancer based in the Faisalabad and i have been building noteworthy UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p> */}
                     <p className='text-zinc-400 '>Hello, I'm Tabinda Noor, a skilled MERN stack developer. Proficient in MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and responsive web applications. With a passion for creating seamless user experiences and a commitment to staying updated with the latest technologies, I bring a valuable blend of expertise in both front-end and back-end development. I look forward to leveraging my skills to contribute to innovative projects and drive impactful solutions.</p>
                     <br />
                     <hr className=' border-t-[2] border-t-gray-500' />
                     <br />
-                    <div className='flex-col flex md:flex-row justify-between'>
+                    <div className='flex-col flex lg:flex-row justify-between'>
                         <div className='flex'>
-                            <p className='mr-4'>Name:</p>
+                            <b className='mr-4'>Name:</b>
                             <p>Tabinda Noor</p>
                         </div>
                         <div className='sm:flex '>
-                        <p className='mr-4'>Email:</p>
+                        <b className='mr-4'>Email:</b>
                       <p>tabindanoor415@gmail.com</p>
                         </div>
                     
                     </div><br />
-                    <div className='flex-col flex md:flex-row justify-between' >
+                    <div className='flex-col flex lg:flex-row justify-between' >
                         <div className='flex'>
-                            <p className='mr-4'>Age:</p>
-                            <p>21</p>
+                            <b className='mr-4'>Age:</b>
+                            <p>{calculateAge()} </p>
                         </div>
                         <div className='flex'>
-                        <p className='mr-4'>From:</p>
+                        <b className='mr-4'>From:</b>
                       <p>Faisalabad,Pakistan</p>
                         </div>
                     
@@ -318,7 +338,7 @@ const [progress, setProgress] = useState(0);
                     <br />
 {/* dounload cv button */}
                     <div className='flex-col flex md:flex-row text-center justify-center lg:justify-between'>
-                        <a href={res}  download="Resume" className='lg:w-1/3  px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2 lg:px-9 xl:px-9'>Download CV</a>
+                        <a href={res}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a>
                         {/* line  */}
                         <hr className=' border-t-[2] border-t-gray-500 w-20 mt-10 sm:mt-5 mx-auto  ' />
                         {/* social media icons */} 
@@ -397,7 +417,7 @@ const [progress, setProgress] = useState(0);
                  
                 </div>
 
-                <div className='grid md:grid-cols-2 xl:grid-cols-3 justify-between mx-6 md:mx-12  ' >
+                <div className='grid md:grid-cols-2 xl:grid-cols-3 justify-between mx-6 sm:mx-28 md:mx-12 text-center ' >
                         
                        
                           {cardData}

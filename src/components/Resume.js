@@ -341,22 +341,19 @@ const ExperienceCard = ()=>{
              </div>
                 {/* take a tiur to the office */}
 
-<div className='flex-col flex lg:flex-row justify-between md:mx-40 mx-5'>
+<div className='flex-col flex xl:flex-row justify-between md:mx-40 mx-5'>
 
-      <div className='mx-2 lg:w-[50%]'>
-        <br /> <br />
+      <div className='mx-2 xl:w-[50%]'>
+        {/* <br /> <br /> */}
           <p className='text-3xl font-semibold '>Know More About Me</p> <br /> <br />
           <p>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
           <p>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
           <p>I have also joined many remote internships which help me to enhance my skills in the Development.</p>
+          <br />
       </div>
-      <div className='mx-3 lg:w-[50%]'>
-      
-    
+      <div className='mx-3 xl:w-[50%]'>
     <img src={mern} alt="" />
-    {/* <iframe  className=' border-2 border-white w-full  h-[315px]' width="560" height="315" src="https://www.youtube.com/embed/suiOEagu6-M?si=SzIcl6WspQrFpdc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-{/* <iframe  className='  w-full  h-[315px]' src="https://www.youtube.com/embed/doteMqP6eSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-      </div>
+       </div>
 </div>  <br /><br /><br /><br />
 <Footer/>
           

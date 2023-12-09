@@ -75,7 +75,7 @@ const Portfolio = () => {
       },
       {
           id:'3',
-          title:"Image to Text, Audio, Video & pdf",
+          title:"Text Extractor",
           image:mern,
           link:"https://github.com/Tabindanoor/image-to-text-audio-video-",
           category: 'React with Database'
@@ -89,7 +89,7 @@ const Portfolio = () => {
       
       },
       {     id:'5',
-          title:"Figma to Rect - E-learning",
+          title:"Figma to React ",
           image:efigma,
           link:"https://github.com/techloset/E-Learning-App/",
           category: 'Figma To React'
@@ -180,7 +180,7 @@ const Portfolio = () => {
 <br /> <br /><br />
 
 
-<div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-9 mx-10 sm:mx-36">
+<div className="grid  xl:grid-cols-3 md:grid-cols-2 gap-9 mx-10 sm:mx-36">
       {filteredCards.map((card) => (
         <Card key={card.id} title={card.title} image={card.image} link={card.link} />
       ))}

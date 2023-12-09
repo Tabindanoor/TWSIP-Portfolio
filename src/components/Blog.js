@@ -166,7 +166,7 @@ const Blog = () => {
 </div> */}
 
 <br />
-<div className='grid  md:grid-cols-2 lg:grid-cols-3 mx-8 lg:mx-24 xl:mx-36 gap-x-4 gap-y-20'>
+<div className='grid  md:grid-cols-2 xl:grid-cols-3 mx-8 lg:mx-24 xl:mx-36 gap-x-4 gap-y-20'>
 <div className="max-w-sm mx-auto overflow-hidden shadow-md">
         <a href='https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img

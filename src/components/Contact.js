@@ -69,7 +69,7 @@ const sendEmail = (e) => {
             
         {/* form and contact */}
 
-        <div className='flex-col flex lg:flex-row mx-5   lg:mx-36 justify-between '>
+        <div className='flex-col flex lg:flex-row mx-5   md:mx-36   justify-between '>
 
           {/* message me */}
           <div className='lg:w-[60%] mx-5  sm:mx-12'>
