@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e9c6db5.css",
+    "main.js": "/static/js/main.8ad7e735.js",
+    "static/media/figma.png": "/static/media/figma.52941969dcb80b93284b.png",
+    "static/media/efigma.png": "/static/media/efigma.be1dee4b513474d3ae52.png",
+    "static/media/mernpr.png": "/static/media/mernpr.b58888d5cae51249b721.png",
+    "static/media/profile.jpg": "/static/media/profile.96a433c86ba3f4b74075.jpg",
+    "static/media/mern.jpg": "/static/media/mern.a95496fb04ed59fdc598.jpg",
+    "static/media/robots.png": "/static/media/robots.a4aac834c9fe0cfe8314.png",
+    "static/media/weather.png": "/static/media/weather.cfdb4db897f0fbe3ff00.png",
+    "static/media/gad.png": "/static/media/gad.fcf13add4a32fe15f800.png",
+    "static/media/assit.png": "/static/media/assit.1e8fbde06db2b981064b.png",
+    "static/media/cyber.png": "/static/media/cyber.c9e48f203d3cec9dcbab.png",
+    "static/media/emotions.png": "/static/media/emotions.1be8ec872863b0b7dc23.png",
+    "static/media/nfs.png": "/static/media/nfs.986195431a10960d9222.png",
+    "static/media/cloud.png": "/static/media/cloud.84f6d80107060654cce8.png",
+    "static/media/My CV (2).pdf": "/static/media/My CV (2).eb74220b47c2431dc808.pdf",
+    "static/media/glasses.png": "/static/media/glasses.5a02f64d1064a6a831d7.png",
+    "static/media/text.png": "/static/media/text.bf71f4205441b92f071b.png",
+    "static/media/todo.png": "/static/media/todo.543aad3c75be268bb67d.png",
+    "static/media/girlpc.png": "/static/media/girlpc.177e74e2c9b7895e3cc8.png",
+    "static/media/black girl.jpg": "/static/media/black girl.5d15aa213af63a791e47.jpg",
+    "static/media/boy.jfif": "/static/media/boy.eee9ba18947b767b229c.jfif",
+    "index.html": "/index.html",
+    "main.0e9c6db5.css.map": "/static/css/main.0e9c6db5.css.map",
+    "main.8ad7e735.js.map": "/static/js/main.8ad7e735.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e9c6db5.css",
+    "static/js/main.8ad7e735.js"
+  ]
+}
