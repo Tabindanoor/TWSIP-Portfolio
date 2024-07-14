@@ -132,12 +132,12 @@ import Navbar from './Navbar';
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <div className='flex-grow bg-[url("../images/black girl.jpg")] bg-cover bg-center px-16 py-5'>
+      <div className='flex-grow bg-[url("../images/black girl.jpg")] bgimg bg-cover bg-center px-16 py-5'>
         <Navbar />
 
         {/* end of navbar */}
 
-        <div className="flex flex-col items-center justify-center h-full" style={{ fontFamily: "poppins" }}>
+        <div className="flex flex-col items-center justify-center h-screen-60 " style={{ fontFamily: "poppins" }}>
           <div className="text-white text-center">
             <p className="text-4xl md:text-4xl font-serif lg:text-6xl font-extrabold">Tabinda Noor</p>
             <br />
@@ -157,7 +157,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='text-white flex justify-between cursor-pointer'>
+        <div className='text-white flex justify-between cursor-pointer '>
           <div className='vertical flex '>
             <p className='mb-5'>ENG</p>
           </div>

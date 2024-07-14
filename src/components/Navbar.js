@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className=''>
         
         <nav className=" ">
       <div className=" mx-auto my-auto ">
