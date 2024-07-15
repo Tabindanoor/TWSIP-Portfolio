@@ -244,8 +244,8 @@ const [progress, setProgress] = useState(0);
                 <div  className='lg:w-[50%] xl:w-[60%] w-[100%] py-5'>
                     <p className='text-green-600 text-3xl'>Who am i ..?</p><br />
                     <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor Certified Ethical Hacker and Web Developer </p> <br />
-                    {/* <p className='text-zinc-500 '>I am a freelancer based in the Faisalabad and i have been building noteworthy UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p> */}
-                    <p className='text-zinc-400 '>Hello, I'm Tabinda Noor, a skilled MERN stack developer. Proficient in MongoDB, Express.js, React.js, and Node.js, I specialize in building dynamic and responsive web applications. With a passion for creating seamless user experiences and a commitment to staying updated with the latest technologies, I bring a valuable blend of expertise in both front-end and back-end development. I look forward to leveraging my skills to contribute to innovative projects and drive impactful solutions.</p>
+                    
+                    <p className='text-zinc-400 '>Hello, I'm Tabinda Noor, a passionate and dedicated MERN stack developer with a Bachelor's degree in Software Engineering. Proficient in Tailwind CSS, MongoDB, Express.js, React.js, and Node.js. I specialize in MERN Stack, building dynamic and responsive web applications. With a passion for creating seamless user experiences and a commitment to staying updated with the latest technologies, I bring a valuable blend of expertise in both front-end and back-end development. I'm also committed to continuous learning, recently delving into AI and advanced web technologies. I look forward to leveraging my skills to contribute to innovative projects and drive impactful solutions.</p>
                     <br />
                     <hr className=' border-t-[2] border-t-gray-500' />
                     <br />
@@ -277,7 +277,15 @@ const [progress, setProgress] = useState(0);
                     <br />
 {/* dounload cv button */}
                     <div className='flex-col flex md:flex-row text-center justify-center lg:justify-between'>
-                        <a href={res}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a>
+
+                      {/* getting secure from people  */}
+                        {/* <a href={res}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a> */}
+
+
+
+                        <a href="mailto:tabindanoor415@gmail.com"  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a>
+
+
                         {/* line  */}
                         <hr className=' border-t-[2] border-t-gray-500 w-20 mt-10 sm:mt-5 mx-auto  ' />
                         {/* social media icons */} 
