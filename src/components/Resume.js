@@ -37,7 +37,7 @@ const Resume = () => {
   return education.map((item,index)=>{
     return (
       <div key={index} >
-      <div className="border-l-2 bg-gray-900 border-green-500 p-4 flex flex-col justify-between leading-normal">
+      <div className="border-l-2 mx-auto text-center center bg-gray-900 border-green-500 p-4 flex flex-col justify-between justify-center leading-normal">
         <div className="mb-8">
           
           <div className="text-3xl font-semibold ">{item.title}</div>
@@ -135,7 +135,7 @@ const ExperienceCard = ()=>{
               
   <div className="flex-col flex lg:flex-row   justify-between  mx-5 lg:mx-36">
   {/* education */}
-  <div className='mx-5 md:w-[50%] '>
+  <div className='mx-5 md:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
       <p className='font-semibold text-4xl'>Education</p> <br />
       <EducationCard/>
@@ -143,7 +143,7 @@ const ExperienceCard = ()=>{
   </div>
     
     {/* experience */}
-    <div className='mx-5 md:w-[50%] '>
+    <div className='mx-5 md:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
       <p className='font-semibold text-4xl'>Experience</p> <br />
       <ExperienceCard/>
