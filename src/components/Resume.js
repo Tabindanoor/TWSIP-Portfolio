@@ -135,7 +135,7 @@ const ExperienceCard = ()=>{
               
   <div className="flex-col flex lg:flex-row   justify-between  mx-5 lg:mx-36">
   {/* education */}
-  <div className='mx-5 md:w-[50%]  mx-auto justify-center'>
+  <div className='lg:mx-5 lg:justify-between md:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
       <p className='font-semibold text-4xl'>Education</p> <br />
       <EducationCard/>
@@ -143,8 +143,9 @@ const ExperienceCard = ()=>{
   </div>
     
     {/* experience */}
-    <div className='mx-5 md:w-[50%]  mx-auto justify-center'>
+    <div className='lg:mx-5 lg:justify-between md:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
+      <br className='lg:hidden ' />
       <p className='font-semibold text-4xl'>Experience</p> <br />
       <ExperienceCard/>
     </div>
@@ -159,7 +160,7 @@ const ExperienceCard = ()=>{
         
                <p>My level of knowledge in some tools</p>
 <br />
-              <p className='text-4xl font-semibold'>My Skills</p>
+              <p className='text-4xl font-semibold'>My Tech Stack</p>
               </div> <br /> <br />
              
              {/* skills with percentages  */}
@@ -250,6 +251,17 @@ const ExperienceCard = ()=>{
 </div>
               </div>
 
+
+              <br />
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Socket.io</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+              </div>
              </div>
 
 
@@ -327,6 +339,18 @@ const ExperienceCard = ()=>{
 </div>
               </div>
               <br />
+
+<div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Redux Toolkit</span>
+  <span className="text-sm font-medium text-white">85%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[80%]" ></div>
+</div>
+              </div>
+
+
 <br /><br /><br /><br /><br />
 
 
@@ -339,6 +363,55 @@ const ExperienceCard = ()=>{
              
 
              </div>
+
+               {/* Certifications Section */}
+      <div className='mx-5 lg:mx-36'>
+        <p className='text-2xl font-semibold text-white'>Certifications</p>
+        <div className='list-disc ml-5 mt-2 text-white'>
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>JavaScript Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>MERN Bootcamp Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Computer Networking Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Cyber Security Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>NSE-1 and NSE-2 Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>HCIA Security Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>HCIA Cloud Computing Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Microsoft C# .NET Training Certification</p>
+          </div>
+
+
+          
+        </div>
+      </div>
                 {/* take a tiur to the office */}
 
 <div className='flex-col flex xl:flex-row justify-between md:mx-40 mx-5'>
@@ -354,7 +427,14 @@ const ExperienceCard = ()=>{
       <div className='mx-3 xl:w-[50%]'>
     <img src={mern} alt="" />
        </div>
-</div>  <br /><br /><br /><br />
+</div>  
+
+<br />
+
+
+
+
+<br /><br /><br /><br />
 <Footer/>
           
             </div>
