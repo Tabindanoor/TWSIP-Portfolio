@@ -37,7 +37,7 @@ const Resume = () => {
   return education.map((item,index)=>{
     return (
       <div key={index} >
-      <div className="border-l-2 mx-auto text-center center bg-gray-900 border-green-500 p-4 flex flex-col justify-between justify-center leading-normal">
+      <div className="border-l-2 mx-auto  center bg-gray-900 border-green-500 p-4 flex flex-col justify-between  leading-normal">
         <div className="mb-8">
           
           <div className="text-3xl font-semibold ">{item.title}</div>
@@ -366,11 +366,11 @@ const ExperienceCard = ()=>{
 
                {/* Certifications Section */}
       <div className='mx-5 lg:mx-36'>
-        <p className='text-2xl font-semibold text-white'>Certifications</p>
+        <p className='text-3xl font-semibold text-white'>Certifications</p>
         <div className='list-disc ml-5 mt-2 text-white'>
           <div className='flex '>
             <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
-            <p>JavaScript Certification</p>
+            <p>JavaScript Certification From Coursera </p>
           </div>
 
           <div className='flex '>
@@ -408,10 +408,18 @@ const ExperienceCard = ()=>{
             <p>Microsoft C# .NET Training Certification</p>
           </div>
 
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Microsoft C# .NET Training Certification</p>
+          </div>
+
 
           
         </div>
       </div>
+      
+      <br/>
+      <br/>
                 {/* take a tiur to the office */}
 
 <div className='flex-col flex xl:flex-row justify-between md:mx-40 mx-5'>
@@ -429,12 +437,11 @@ const ExperienceCard = ()=>{
        </div>
 </div>  
 
+
+
+
+
 <br />
-
-
-
-
-<br /><br /><br /><br />
 <Footer/>
           
             </div>
