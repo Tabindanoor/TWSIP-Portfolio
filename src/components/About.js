@@ -326,7 +326,7 @@ const [progress, setProgress] = useState(0);
 </svg>
 </a>
 {/* <!-- Linkedin --> */}
-<a href="https://www.linkedin.com/in/tabinda-noor-54b478246/"   rel="noreferrer" target='_blank'>
+<a href="https://www.linkedin.com/in/tabinda-noor-935429237/"   rel="noreferrer" target='_blank'>
 <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-5 w-5 bg-white rounded-sm p-[2px] mb-5 mx-3"

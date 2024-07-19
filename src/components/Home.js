@@ -126,18 +126,18 @@
 
 import React from 'react';
 import Typewriter from "typewriter-effect";
-import './Home.css';
+import './Home.css'; 
 import Navbar from './Navbar';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className='flex-grow bg-[url("../images/black girl.jpg")] bg-contain bg-no-repeat bgimg sm:bg-contain md:bg-no-repeat xl:bg-cover bg-center px-16 py-5'>
+    <div className=" flex flex-col ">
+      <div className='flex-grow bg-[url("../images/black girl.jpg")] bg-contain bg-no-repeat bgimg sm:bg-contain md:bg-no-repeat xl:bg-cover bg-center px-16 '>
         <Navbar />
 
         {/* end of navbar */}
 
-        <div className="flex flex-col items-center justify-center h-screen-60 " style={{ fontFamily: "poppins" }}>
+        <div className="flex flex-col items-center justify-center  h-screen-60 " style={{ fontFamily: "poppins" }}>
           <div className="text-white text-center">
             <p className="text-4xl md:text-4xl font-serif lg:text-6xl font-extrabold">Tabinda Noor</p>
             <br />

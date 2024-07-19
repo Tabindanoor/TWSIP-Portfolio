@@ -7,7 +7,7 @@ module.exports = {
 
     extend: {
       height: {
-        'screen-60': '60vh', // 80% of the screen height
+        'screen-60': '66vh', // 50% of the screen height
       },
     },
   },
