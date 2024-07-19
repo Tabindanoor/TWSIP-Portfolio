@@ -132,7 +132,7 @@ import Navbar from './Navbar';
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <div className='flex-grow bg-[url("../images/black girl.jpg")] bgimg bg-cover bg-center px-16 py-5'>
+      <div className='flex-grow bg-[url("../images/black girl.jpg")] bg-contain bg-no-repeat bgimg sm:bg-contain md:bg-no-repeat xl:bg-cover bg-center px-16 py-5'>
         <Navbar />
 
         {/* end of navbar */}
@@ -143,11 +143,11 @@ const Home = () => {
             <br />
             <br />
             <div className="flex text-center justify-center font-sans font-semibold text-2xl sm:text-3xl">
-              <div className='hidden sm:flex'>
+              <div className=' flex '>
                 <p className='inline'>I'm a&nbsp;</p>
                 <Typewriter
                   options={{
-                    strings: ['Developer', 'Freelancer', 'Graphics Designer', 'Content Writer'],
+                    strings: ['Developer', 'Freelancer', 'Graphic Artist', 'Content Writer'],
                     autoStart: true,
                     loop: true,
                   }}

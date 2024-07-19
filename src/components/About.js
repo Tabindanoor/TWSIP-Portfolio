@@ -128,7 +128,7 @@ const [progress, setProgress] = useState(0);
       image:    <IoSchool />
       ,
         service: 'Educational & Training Services',
-        description: 'I Offer online courses & training sessions in web development projects, programming Languages  & ethical hacking for dedicated learners.',
+        description: 'Offering online courses and training in web development, programming, and ethical hacking for dedicated learners.',
       }
     ,
     {
@@ -211,10 +211,6 @@ const [progress, setProgress] = useState(0);
     <div>
         <div className='bg-black text-white '>
 
-
-
-
-
         {/* cross icon */}
         {/* <a href="mailto:tabindanoor415@gmail.com">Get started</a> */}
            
@@ -226,14 +222,15 @@ const [progress, setProgress] = useState(0);
             </div>
           
           
-<br /><br />
-              <br /><br /><br />
+              <br />
+              <br />
+              <br />
             <div className='mx-auto text-center'>
                 <p className='text-gray-400'>Get to know me</p>
                 <br />
                 <p className='font-bold text-5xl'>About Me</p>
             </div>
-            <br /><br />
+            <br />
 
            {/* animated line */}
 
@@ -244,13 +241,13 @@ const [progress, setProgress] = useState(0);
                 />
             </div>
 
-<br /><br /><br />
+            <br />
             {/* who am i  */}
             <div className='flex-col  justify-between xl:mx-36  mx-12 flex lg:flex-row '>
                 {/* girl picture  */}
-                <div className=' lg:block lg:w-[50%] xl:w-[45%]  md:mx-auto justify-center center items-center  lg:mx-16 '>
+                <div className=' lg:block lg:w-[40%] xl:w-[45%]  md:mx-auto justify-center center items-center  lg:mx-16 '>
                    
-<img src={profile} alt=""
+              <img src={profile} alt=""
                     className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto lg:mt-10' />
                 </div>
 
@@ -361,9 +358,10 @@ const [progress, setProgress] = useState(0);
             </div>
             {/* end of who am i section */}
 
-<br /><br />
+<br />
                 {/* my services */}
-                <div className=' mx-6 lg:mx-36 '>
+                {/* <div className=' mx-6 lg:mx-36 '> */}
+                <div className=' mx-6 lg:mx-20 '>
                     <p className='text-slate-500'>services i offer to my clients</p>
                     <br />
                     <p className='text-4xl font-bold'>My Services</p>
@@ -371,7 +369,6 @@ const [progress, setProgress] = useState(0);
 
 {/* using the cards in the page  */}
                    
-<br />
 
 
                        
@@ -384,13 +381,13 @@ const [progress, setProgress] = useState(0);
                           {cardData}
                     </div>
 
-<br /><br />
+<br />
                                                     {/* testimonials */}
-                <div className=' mx-6 lg:mx-36'>
+                <div className=' mx-6 lg:mx-20'>
                     <p className='text-slate-500'> What my clients think about me</p>
                     <br />
                     <p className='text-4xl font-bold'>Testimonials</p>
-                    <br /><br />
+                    <br />
                 </div>
 
          
@@ -420,7 +417,7 @@ const [progress, setProgress] = useState(0);
           
           <p className="leading-relaxed mb-6">{testimonial[currentIndex].description}</p>
           
-        </div>  <br />  
+        </div> 
         </div>
 
 <br />
@@ -430,12 +427,12 @@ const [progress, setProgress] = useState(0);
 </div>
 
 
-    <div className=' lg:mx-12 xl:mx-36 mx-6 '>
+    <div className=' lg:mx-20 xl:mx-36 mx-6 '>
       
                     <p className='text-slate-500'>Get started with my services</p>
                     <br />
                     <p className='text-4xl font-bold'>Choose a Plan</p>
-                    <br /><br />
+                    
 
                                                                   {/*   cards tp choose a plan*/}
 
@@ -444,7 +441,7 @@ const [progress, setProgress] = useState(0);
 
     
 
-        <br /><br /><br />
+        <br />
 
 
         <div className='grid md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 mx-6 lg:mx-8 '>
@@ -477,7 +474,7 @@ const [progress, setProgress] = useState(0);
                 <ul  className="mb-8 space-y-4 text-left">
                     <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
                        
-                        <span>Simple static website (3 pages)</span>
+                        <span>Simple static website </span>
                     </li>
                     <li className="flex mx-auto text-center justify-center items-center space-x-3">
                         {/* <!-- Icon --> */}
@@ -547,7 +544,7 @@ const [progress, setProgress] = useState(0);
                 <ul  className="mb-8 space-y-4 text-left">
                     <li className="flex mx-auto text-center justify-center items-center space-x-3 ">
                        
-                        <span>Dynamic website (5 pages)</span>
+                        <span>Dynamic website</span>
                     </li>
                     <li className="flex mx-auto text-center justify-center items-center space-x-3">
                         {/* <!-- Icon --> */}
@@ -621,8 +618,7 @@ const [progress, setProgress] = useState(0);
                 <li className="flex mx-auto text-center justify-center items-center space-x-3">
                         {/* <!-- Icon --> */}
                         
-                        <span>Full-stack web application
-                        </span>
+                        <span>Full-stack website</span>
                     </li>
 
                     <li className="flex mx-auto text-center justify-center items-center space-x-3">
@@ -663,7 +659,7 @@ const [progress, setProgress] = useState(0);
                 <EmailButton email={pricing.email}   />
                
             </div>
-                <br /> <br />   
+                
         </div>
     </div>
         </div>

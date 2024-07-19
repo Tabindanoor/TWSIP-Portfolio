@@ -37,7 +37,7 @@ const Card = ({ title, image, link }) => {
       {isHovered && (
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-90 flex flex-col items-center justify-center">
           <h3 className="text-white text-lg font-bold">{title}</h3>
-          <a href={link} className='text-green-500'> More info</a><br />
+          <a href={link} target='_blank' rel="noreferrer" className='text-green-500'> More info</a><br />
         </div>
       )} 
     </div>
@@ -129,13 +129,13 @@ const Portfolio = () => {
           
           
 <br /><br />
-              <br /><br /><br />
+              <br />
             <div className='mx-auto text-center'>
                 <p className='text-gray-400'>Showcasing some of my best work</p>
                 <br />
                 <p className='font-bold text-5xl'>Portfolio</p>
             </div>
-            <br /><br />
+            <br />
 
            {/* animated line */}
 
@@ -146,7 +146,7 @@ const Portfolio = () => {
                 />
               
             </div>
-           <br /><br />
+           <br />
            
            <div className='mx-auto text-center '>
             <ul className='sm:flex text-center justify-center '>
@@ -177,17 +177,23 @@ const Portfolio = () => {
             </ul>
            </div>
            
-<br /> <br /><br />
+<br /> 
 
 
-<div className="grid  xl:grid-cols-3 md:grid-cols-2 gap-9 mx-10 sm:mx-36">
+<div className="grid  xl:grid-cols-3 md:grid-cols-2 gap-9 mx-10 sm:mx-12 lg:24">
       {filteredCards.map((card) => (
         <Card key={card.id} title={card.title} image={card.image} link={card.link} />
       ))}
-      <br /><br />
       
-      <div className='mx-auto text-center flex '>
-                <p className='text-gray-400'>My All Projects Are Available on </p> <a href="https://github.com/Tabindanoor"   rel="noreferrer" target='_blank'>
+      
+
+
+    </div>
+
+  <br/>
+
+    <div className='mx-auto text-center justify-center center flex '>
+                <p className='text-gray-400 text-center '>My All Projects Are Available on </p> <a href="https://github.com/Tabindanoor"   rel="noreferrer" target='_blank'>
 <svg
 
   xmlns="http://www.w3.org/2000/svg"
@@ -200,9 +206,10 @@ const Portfolio = () => {
 </a> 
                 
             </div>
-            <br />
 
-    </div>
+
+
+
     <Footer />
     </div>
   )

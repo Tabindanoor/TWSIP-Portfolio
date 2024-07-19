@@ -141,7 +141,7 @@ const Blog = () => {
             </div>
           
           
-<br /><br />
+
               <br /><br /><br />
             <div className='mx-auto text-center'>
                 <p className='text-gray-400'>Check out my latest blog posts</p>
@@ -159,15 +159,14 @@ const Blog = () => {
                 />
               
             </div>
-            <br /><br /><br />
-
+            <br /><br />
 {/* <div className='grid  md:grid-cols-2 lg:grid-cols-3 mx-8 lg:mx-24 xl:mx-36 gap-x-4 gap-y-20   '>
     <MyBlogCards/>
 </div> */}
 
 <br />
-<div className='grid  md:grid-cols-2 xl:grid-cols-3 mx-8 lg:mx-24 xl:mx-36 gap-x-4 gap-y-20'>
-<div className="max-w-sm mx-auto overflow-hidden shadow-md">
+<div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mx-8 lg:mx-16 gap-x-4 gap-y-20'>
+<div className=" max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://technofeat.net/ray-ban-meta-smart-glasses-a-glimpse-into-the-future-of-technology/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -212,7 +211,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className=" max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://brighttechvisions.com/how-to-become-a-cloud-engineer/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -235,7 +234,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className="max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://brighttechvisions.com/cybersecurity-experts/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -257,7 +256,7 @@ const Blog = () => {
             
           </div>
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className="max-w-md mx-auto overflow-hidden shadow-md">
         <a href="https://brighttechvisions.com/can-robots-have-emotions-or-consciousness/" rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -279,7 +278,7 @@ const Blog = () => {
             
           </div>
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className="max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://brighttechvisions.com/ai-assistant-vs-human-assistant/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -302,7 +301,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className="max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://brighttechvisions.com/why-gadgets-are-essential-in-the-digital-age/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -324,7 +323,7 @@ const Blog = () => {
             
           </div>
 
-          <div className="max-w-sm mx-auto overflow-hidden shadow-md">
+          <div className="max-w-md mx-auto overflow-hidden shadow-md">
         <a href='https://brighttechvisions.com/why-should-robots-go-to-space-instead-of-humans/' rel='noreferrer'  target='_blank'  >    <div className="relative">
                <img
               className="w-full"
@@ -349,7 +348,7 @@ const Blog = () => {
 
           
 </div>
-<br /><br /><br /><br />
+<br /><br />
 
 <Footer/>
     </div>

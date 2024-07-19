@@ -7,7 +7,7 @@ const CopyrightYear = () => {
   
     return (
       <div className='text-center text-white'>
-        &copy; {currentYear} Made By Tabindanoor❤️
+        &copy; {currentYear} Made By Tabindanoor ❤️
       </div>
     );
   };
@@ -16,14 +16,14 @@ const CopyrightYear = () => {
 const Footer = () => {
   return (
     <div className='bg-black'>
-<div className='bg-black text-white py-14 text-base p-4 xl:p-12   xl:pl-[65px]  xl:pr-[96px] 2xl:pl-[106px] 2xl:pr-[187px]'>
-                <div className='flex justify-between  list-none max-lg:flex-col max-lg:gap-6 text-white items-center'>
+<div className='bg-black text-white text-base p-4 xl:p-12   xl:pl-[65px]  xl:pr-[96px] 2xl:pl-[106px] 2xl:pr-[187px]'>
+                <div className='flex justify-between  list-none max-xl:flex-col max-xl:gap-6 text-white items-center'>
                     <div >
                         {/* <li className='mb-6'> <img  className="alex" src={footer}   alt='alex'/></li> */}
                         <b>Software Engineer</b>
-                        <li className='max-lg:hidden text-sm  opacity-70 font-sans text-[#F6F6F6]'>tabindanoor415@gmail.com</li>
+                        <li className='max-xl:hidden text-sm  opacity-70 font-sans text-[#F6F6F6]'>tabindanoor415@gmail.com</li>
                     </div>
-                    <div className='flex gap-6  lg:hidden'>
+                    <div className='flex gap-6  xl:hidden'>
                         <div>
 
                         <a href="https://github.com/Tabindanoor"   rel="noreferrer" target='_blank'>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
 
                         <div> 
-                        <a href="https://www.linkedin.com/in/tabinda-noor-54b478246/"   rel="noreferrer" target='_blank'>
+                        <a href="https://www.linkedin.com/in/tabinda-noor-935429237/"   rel="noreferrer" target='_blank'>
 <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-8 w-8 bg-white rounded-sm p-[2px] mb-5 mx-3"
@@ -68,7 +68,7 @@ const Footer = () => {
                         </div>
 
 
-                        <div className=' max-lg:hidden '>
+                        <div className=' max-xl:hidden '>
                             <li className='mb-6 flex gap-4'> 
                             <a href="https://twitter.com/its_t_noor"   rel="noreferrer" target='_blank'><svg
 
@@ -103,7 +103,7 @@ const Footer = () => {
                          </div>
                         </div>
 
-                        <div className=' max-lg:hidden '>
+                        <div className=' max-xl:hidden '>
                             <li className='mb-6 flex gap-4'> 
                             <a href="https://www.facebook.com/profile.php?id=100080879324307"   rel="noreferrer" target='_blank'>
 <svg
@@ -121,7 +121,7 @@ const Footer = () => {
 
 
                             <li className='flex gap-4'>
-                            <a href="https://www.linkedin.com/in/tabinda-noor-54b478246/"   rel="noreferrer" target='_blank'>
+                            <a href="https://www.linkedin.com/in/tabinda-noor-935429237/"   rel="noreferrer" target='_blank'>
 <svg
   xmlns="http://www.w3.org/2000/svg"
   className="h-5 w-5 bg-white rounded-sm p-[2px] mb-5 mx-3 "
@@ -142,7 +142,7 @@ const Footer = () => {
                     </div>
 
             </div>
-                <li className='text-[#F6F6F6] text-sm lg:hidden opacity-70 list-none text-center font-sans mt-20'>tabindanoor415@gmail.com</li>
+                <li className='text-[#F6F6F6] text-sm xl:hidden opacity-70 list-none text-center font-sans mt-5'>tabindanoor415@gmail.com</li>
                 
       </div>
       <CopyrightYear/>

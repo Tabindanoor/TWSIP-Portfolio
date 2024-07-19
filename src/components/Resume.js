@@ -110,15 +110,14 @@ const ExperienceCard = ()=>{
           
             </div>
           
-          
-<br /><br />
+ 
               <br /><br /><br />
             <div className='mx-auto text-center'>
                 <p className='text-gray-400'>Check out my Resume</p>
                 <br />
                 <p className='font-bold text-5xl'>Resume</p>
             </div>
-            <br /><br />
+            <br />
 
            {/* animated line */}
 
@@ -129,39 +128,51 @@ const ExperienceCard = ()=>{
                 />
               
             </div>
-           <br /><br /><br />
+           <br /><br />
                          {/* education and experience  */}
 
+
+    <div className='mx-8 lg:mx-36'>
+        
+        <p className='text-gray-400'>My Education & Experiences</p>
+<br />
+       </div>
               
-  <div className="flex-col flex lg:flex-row   justify-between  mx-5 lg:mx-36">
+  <div className="flex-col flex lg:flex-row   justify-between  mx-8 lg:mx-36">
   {/* education */}
-  <div className='lg:mx-5 lg:justify-between md:w-[50%]  mx-auto justify-center'>
+
+  <div className='lg:mx-5 lg:justify-between lg:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
-      <p className='font-semibold text-4xl'>Education</p> <br />
+    <br className='lg:hidden ' />
+    <p className='text-4xl font-semibold  '>Education</p><br />
       <EducationCard/>
     </div>
   </div>
     
     {/* experience */}
-    <div className='lg:mx-5 lg:justify-between md:w-[50%]  mx-auto justify-center'>
+    <div className='lg:mx-5 lg:justify-between lg:w-[50%]  mx-auto justify-center'>
     <div className=" w-full ">
       <br className='lg:hidden ' />
       <p className='font-semibold text-4xl'>Experience</p> <br />
       <ExperienceCard/>
     </div>
   </div>
+
+
   </div>
 
-<br /><br /><br />
+<br /><br />
 
              {/*level of knowledge  */}
-             <div className='mx-5 lg:mx-36'>
-              <div className='mx-5'>
+             <div className='mx-8 lg:mx-36'>
+              <div className=''>
         
-               <p>My level of knowledge in some tools</p>
+               <p className='text-gray-400'>My level of knowledge in some tools</p>
 <br />
               <p className='text-4xl font-semibold'>My Tech Stack</p>
-              </div> <br /> <br />
+              </div> 
+              
+              <br /> <br />
              
              {/* skills with percentages  */}
              <div className='flex-col flex md:flex-row '>
@@ -351,7 +362,7 @@ const ExperienceCard = ()=>{
               </div>
 
 
-<br /><br /><br /><br /><br />
+<br /><br />
 
 
              </div>
@@ -365,9 +376,16 @@ const ExperienceCard = ()=>{
              </div>
 
                {/* Certifications Section */}
-      <div className='mx-5 lg:mx-36'>
-        <p className='text-3xl font-semibold text-white'>Certifications</p>
-        <div className='list-disc ml-5 mt-2 text-white'>
+      <div className='mx-8 lg:mx-36 text-gray-400'>
+      <div className=''>
+        
+        <p className='text-gray-400'>My Achievements</p>
+<br />
+       <p className='text-4xl font-semibold text-white'>Certifications</p>
+       </div>
+
+<br />
+        <div className='list-disc ml-5 mt-2 text-gray-300'>
           <div className='flex '>
             <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
             <p>JavaScript Certification From Coursera </p>
@@ -375,8 +393,65 @@ const ExperienceCard = ()=>{
 
           <div className='flex '>
             <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
-            <p>MERN Bootcamp Certification</p>
+            <p>MERN Bootcamp Certification (Techloset Solutions)</p>
           </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>CS50x Puzzle Solver </p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>WordSprint 3.0 winner  </p>
+          </div>
+
+         
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Microsoft C# .NET Training Certification</p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Soft Skills Business Bootcamp </p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Lablab.ai 24 Claude Hackathon </p>
+          </div>
+
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Lablab.ai Gemini Hackathon  </p>
+          </div>
+
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Testing with Selenium (HCC Training Bootcamp) </p>
+          </div>
+
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Wordpress Training (DigiSkills) </p>
+          </div>
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Graphics Designing  (DigiSkills) </p>
+          </div>
+
+
+          <div className='flex '>
+            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
+            <p>Python Programming (Stanford University Code In Place) </p>
+          </div>
+
 
           <div className='flex '>
             <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
@@ -403,17 +478,6 @@ const ExperienceCard = ()=>{
             <p>HCIA Cloud Computing Certification</p>
           </div>
 
-          <div className='flex '>
-            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
-            <p>Microsoft C# .NET Training Certification</p>
-          </div>
-
-          <div className='flex '>
-            <div className='w-4 h-4 bg-green-600 rounded-full mt-1 mr-3'></div>
-            <p>Microsoft C# .NET Training Certification</p>
-          </div>
-
-
           
         </div>
       </div>
@@ -422,17 +486,17 @@ const ExperienceCard = ()=>{
       <br/>
                 {/* take a tiur to the office */}
 
-<div className='flex-col flex xl:flex-row justify-between md:mx-40 mx-5'>
+<div className='flex-col flex xl:flex-row justify-between mx-8 lg:mx-36 '>
 
-      <div className='mx-2 xl:w-[50%]'>
-        {/* <br /> <br /> */}
-          <p className='text-3xl font-semibold '>Know More About Me</p> <br /> <br />
-          <p>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
-          <p>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
-          <p>I have also joined many remote internships which help me to enhance my skills in the Development.</p>
+      <div className=' xl:w-[50%] w-full'>
+
+          <p className='text-4xl font-semibold  '>Know More About Me</p> <br /> 
+          <p className='text-gray-300'>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
+          <p className='text-gray-300'>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
+          <p className='text-gray-300'>I have also joined many remote internships which help me to enhance my skills in the Development.</p>
           <br />
       </div>
-      <div className='mx-3 xl:w-[50%]'>
+      <div className='xl:mx-3 w-full xl:w-[50%]'>
     <img src={mern} alt="" />
        </div>
 </div>  
