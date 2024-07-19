@@ -40,7 +40,7 @@ const sendEmail = (e) => {
 
   return (
   
-    <div className='bg-black text-white'>
+    <div className='bg-black text-white h-full'>
        {/* cross icon */}
             
        <div className='sticky font-bold top-6 right-6 z-10 lg:mx-5 xl:mx-16   mx-auto'>
@@ -69,7 +69,7 @@ const sendEmail = (e) => {
             
         {/* form and contact */}
 
-        <div className='flex-col flex lg:flex-row mx-5   md:mx-36   justify-between '>
+        <div className='flex-col flex lg:flex-row mx-5   md:mx-12   justify-between '>
 
           {/* message me */}
           <div className='lg:w-[60%] mx-5  sm:mx-12'>
@@ -85,7 +85,13 @@ const sendEmail = (e) => {
               </form>
           </div>
               {/* contact  */}
-              <div className=' lg:w-[40%] lg:mx-0'>
+
+
+              <br className='lg:hidden' />
+
+
+
+              <div className=' lg:w-[40%] lg:mx-0 mx-5  sm:mx-12 '>
                 <h1 className='text-2xl font-bold '>Contact Info</h1><br />
                 <p className='text-lg '>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
                 <div className='flex mt-4'>
@@ -127,7 +133,9 @@ const sendEmail = (e) => {
               </div>
          
         </div> 
-    <br /><br /><br />
+    <br />
+
+
 
 
 <Footer/>

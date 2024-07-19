@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState, useRef } from 'react';
-import res from '../images/My CV (2).pdf'
+import res from '../images/My Resume.pdf'
 import { Link } from 'react-router-dom';
 import './About.css'
 import girl1 from "../images/girl1.png"
@@ -254,7 +254,7 @@ const [progress, setProgress] = useState(0);
 {/* introduction  */}
                 <div  className='lg:w-[50%] xl:w-[60%] w-[100%] py-5'>
                     <p className='text-green-600 text-3xl'>Who am i ..?</p><br />
-                    <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor Certified Ethical Hacker and Web Developer </p> <br />
+                    <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor : Software Engineer || MERN Stack Developer   </p> <br />
                     
                     <p className='text-zinc-400 '>Hello, I'm Tabinda Noor, a passionate and dedicated MERN stack developer with a Bachelor's degree in Software Engineering. Proficient in Tailwind CSS, MongoDB, Express.js, React.js, and Node.js. I specialize in MERN Stack, building dynamic and responsive web applications. With a passion for creating seamless user experiences and a commitment to staying updated with the latest technologies, I bring a valuable blend of expertise in both front-end and back-end development. I'm also committed to continuous learning, recently delving into AI and advanced web technologies. I look forward to leveraging my skills to contribute to innovative projects and drive impactful solutions.</p>
                     <br />
@@ -427,7 +427,7 @@ const [progress, setProgress] = useState(0);
 </div>
 
 
-    <div className=' lg:mx-20 xl:mx-36 mx-6 '>
+    <div className=' lg:mx-20 xl:mx-20 mx-6 '>
       
                     <p className='text-slate-500'>Get started with my services</p>
                     <br />
