@@ -9,7 +9,7 @@ const Navbar = () => {
         
         <nav className=" ">
       <div className=" mx-auto my-auto ">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between ">
           <div className="flex-shrink-0 flex items-center ">
             {/* <img className="w-20 mr-4" src={white_linux} alt="Logo" /> */}
             <p className='text-white rounded-md font-semibold'>TNM</p>
