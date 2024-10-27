@@ -81,6 +81,8 @@ const Resume = () => {
   
  ]
 
+
+
 const ExperienceCard = ()=>{
   return experience.map((item,index)=>{
     return (
@@ -217,6 +219,26 @@ const ExperienceCard = ()=>{
   <div className="bg-green-600 h-2.5  w-[80%]" ></div>
 </div>
 
+</div><br />
+<div>
+  <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">NEXT JS </span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+
+</div><br />
+<div>
+  <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">React Native</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+
 </div>
 
 <br />
@@ -334,6 +356,28 @@ const ExperienceCard = ()=>{
 </div>
               </div>
               <br />
+              <div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Software Testing</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+              </div>
+              <br />
+
+               <div>
+                   <div className="flex justify-between mb-1 mx-5">
+  <span className="text-base font-medium text-white">Python</span>
+  <span className="text-sm font-medium text-white">70%</span>
+</div>
+<div className=" rounded-full h-2.5 bg-gray-700 mx-5">
+  <div className="bg-green-600 h-2.5  w-[70%]" ></div>
+</div>
+              </div>
+              <br />
+
 <div>
                    <div className="flex justify-between mb-1 mx-5">
   <span className="text-base font-medium text-white">Mongo DB</span>
@@ -495,7 +539,7 @@ const ExperienceCard = ()=>{
       <div className=' xl:w-[50%] w-full'>
 
           <p className='text-4xl font-semibold  '>Know More About Me</p> <br /> 
-          <p className='text-gray-300'>Currently i am doing bachelors in Software Engineering from Government College University Faisalabad.</p><br />
+          <p className='text-gray-300'> I have done bachelors in Software Engineering from Government College University Faisalabad.</p><br />
           <p className='text-gray-300'>I love to solve complex problems, i love traveling and reading books. I am interested in learning new and innovative skills and want to keep myself updated with the technology trends.</p>
           <p className='text-gray-300'>I have also joined many remote internships which help me to enhance my skills in the Development.</p>
           <br />

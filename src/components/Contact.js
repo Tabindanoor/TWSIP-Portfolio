@@ -2,6 +2,11 @@ import React,{useState,useEffect,useRef } from 'react'
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import Footer from './Footer';
+import { FaRegUserCircle } from "react-icons/fa";
+import { AiOutlineHome } from "react-icons/ai";
+import { FiMail } from "react-icons/fi";
+
+
 // import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -96,19 +101,20 @@ const sendEmail = (e) => {
                 <p className='text-lg '>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
                 <div className='flex mt-4'>
                 <div className='vertical sm:flex hidden '>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-16">
-    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 2c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 12c-1.105 0-2-.895-2-2 0-2.205-1.795-4-4-4s-4 1.795-4 4c0 1.105-.895 2-2 2h-2v2h16v-2h-2z" />
-  </svg>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="green" className=" w-10 h-16">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-</svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="green" className="  w-10 h-16">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" className="  w-10 h-16" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 5.97V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5.97M12 12L2 6l10 6 10-6zM2 6l10 6 10-6" />
-  </svg>
+               
+
+                <div className="w-10 h-16 text-green-500">
+  <FaRegUserCircle size="100%" />
+</div>
+<div className="w-10 h-16 text-green-500">
+  <AiOutlineHome size="100%" />
+</div>
+<div className="w-10 h-16 text-green-500">
+  <FiMail size="100%" />
+</div>
+
+
 
                 </div>
 
@@ -123,10 +129,9 @@ const sendEmail = (e) => {
                   <p  className=''>Tabinda Noor</p><br />
                   <p  className='font-bold '>Location</p>
                   <p  className=''>Faisalabad</p><br />
-                  <p  className='font-bold '>Call Me</p>
-                  <p  className=''>+92 3055734382</p><br />
-                  <p  className='font-bold '>Email me</p>
-                  <p  className=''>tabindanoor415@gmail.com</p>
+                  <p  className='font-bold '>Contact Me</p>
+                  <p  className=''>tabindanoor415@gmail.com</p><br />
+                 
                 </div>
                 </div>
                

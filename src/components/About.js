@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState, useRef } from 'react';
-import res from '../images/My Resume.pdf'
+// import res from '../images/My Resume.pdf'
+import Resume from '../images/TabindaNoorResume.pdf'
 import { Link } from 'react-router-dom';
 import './About.css'
 import girl1 from "../images/girl1.png"
@@ -8,7 +9,8 @@ import girl2 from "../images/girl2.png"
 import boy1 from "../images/boy1.png"
 import boy2 from "../images/boy2.png"
 import Footer from './Footer';
-import profile from '../images/profile.jpg';
+// import profile from '../images/profile.jpg';
+import pic from '../images/pic.jpg';
 import { FaCode } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -83,23 +85,23 @@ const [progress, setProgress] = useState(0);
 
 
 
-  const [birthdate, setBirthdate] = useState('2002-03-21'); // Replace with your actual birthdate
+  // const [birthdate, setBirthdate] = useState('2002-03-21'); // Replace with your actual birthdate
 
-  const calculateAge = () => {
-    const birthdateDate = new Date(birthdate);
-    const today = new Date();
+  // const calculateAge = () => {
+  //   const birthdateDate = new Date(birthdate);
+  //   const today = new Date();
 
-    let age = today.getFullYear() - birthdateDate.getFullYear();
+  //   let age = today.getFullYear() - birthdateDate.getFullYear();
 
-    if (
-      today.getMonth() < birthdateDate.getMonth() ||
-      (today.getMonth() === birthdateDate.getMonth() && today.getDate() < birthdateDate.getDate())
-    ) {
-      age -= 1;
-    }
+  //   if (
+  //     today.getMonth() < birthdateDate.getMonth() ||
+  //     (today.getMonth() === birthdateDate.getMonth() && today.getDate() < birthdateDate.getDate())
+  //   ) {
+  //     age -= 1;
+  //   }
 
-    return age;
-  };
+  //   return age;
+  // };
   // object data for the cards 
   
   
@@ -182,7 +184,7 @@ const [progress, setProgress] = useState(0);
   }, []);
 
   // princing cards 
-  const pricing = [
+   const pricing = [
     {
       
       title:"Standard",
@@ -247,12 +249,16 @@ const [progress, setProgress] = useState(0);
                 {/* girl picture  */}
                 <div className=' lg:block lg:w-[40%] xl:w-[45%]  md:mx-auto justify-center center items-center  lg:mx-16 '>
                    
-              <img src={profile} alt=""
-                    className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto lg:mt-10' />
+                {/* <img src={profile} alt=""
+                    className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto lg:mt-10' />  */}
+                  
+                   <img src={pic} alt=""
+                    className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto' />
+                    {/* className=' sm:w-[300px] md:w-auto rounded lg:rounded-none mx-auto lg:mt-10' /> */}
                 </div>
 
 {/* introduction  */}
-                <div  className='lg:w-[50%] xl:w-[60%] w-[100%] py-5'>
+                <div  className='lg:w-[50%] xl:w-[60%] w-[100%]'>
                     <p className='text-green-600 text-3xl'>Who am i ..?</p><br />
                     <p className='text-white font-extrabold text-3xl'>I'm Tabinda Noor : Software Engineer || MERN Stack Developer   </p> <br />
                     
@@ -273,8 +279,8 @@ const [progress, setProgress] = useState(0);
                     </div><br />
                     <div className='flex-col flex lg:flex-row justify-between' >
                         <div className='flex'>
-                            <b className='mr-4'>Age:</b>
-                            <p>{calculateAge()} </p>
+                            <b className='mr-4'>Software Engineer </b>
+                            {/* <p>{calculateAge()} </p> */}
                         </div>
                         <div className='flex'>
                         <b className='mr-4'>From:</b>
@@ -290,7 +296,8 @@ const [progress, setProgress] = useState(0);
                     <div className='flex-col flex md:flex-row text-center justify-center lg:justify-between'>
 
                       {/* getting secure from people  */}
-                        <a href={res}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a>
+                        <a href={Resume}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a>
+                        {/* <a href={res}  download="Resume" className='xl:w-1/3 px-5 rounded-full text-white bg-green-600 py-3 lg:h-1/2  xl:px-3 2xl:px-9'>Download CV</a> */}
 
 
 
