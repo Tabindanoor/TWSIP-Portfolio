@@ -59,10 +59,6 @@ const Resume = () => {
     title:"Programmmer",
     subtitle:"Corvit Systems Faisalabad / 25-07-2022 - 20-08-2022",
     description:"Using python programming Language, Manage the instances of AWS using python scripts .",
-  }, {
-    title:"Programmmer",
-    subtitle:"Corvit Systems Faisalabad / 25-07-2022 - 20-08-2022",
-    description:"Using python programming Language, Manage the instances of AWS using python scripts .",
   },
   {
     title:"MERN Bootcamper ",
