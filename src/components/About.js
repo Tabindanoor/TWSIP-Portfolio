@@ -85,25 +85,6 @@ const [progress, setProgress] = useState(0);
 
 
 
-  // const [birthdate, setBirthdate] = useState('2002-03-21'); // Replace with your actual birthdate
-
-  // const calculateAge = () => {
-  //   const birthdateDate = new Date(birthdate);
-  //   const today = new Date();
-
-  //   let age = today.getFullYear() - birthdateDate.getFullYear();
-
-  //   if (
-  //     today.getMonth() < birthdateDate.getMonth() ||
-  //     (today.getMonth() === birthdateDate.getMonth() && today.getDate() < birthdateDate.getDate())
-  //   ) {
-  //     age -= 1;
-  //   }
-
-  //   return age;
-  // };
-  // object data for the cards 
-  
   
   const myCards = [
     {
