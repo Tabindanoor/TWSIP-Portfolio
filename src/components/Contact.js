@@ -11,10 +11,7 @@ import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
 
-    // Replace with your email sending logic here
-    // You can use libraries like Nodemailer, EmailJS, etc. to send the email
-
-    // Reset form fields after submission
+  
    
 
   const [progress, setProgress] = useState(0);
