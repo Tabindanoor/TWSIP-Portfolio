@@ -131,8 +131,8 @@ import Navbar from './Navbar';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className='flex-grow bg-[url("../images/black girl.jpg")] bg-contain bg-no-repeat bgimg sm:bg-contain md:bg-no-repeat xl:bg-cover bg-center px-16'>
+<div className="h-screen overflow-hidden flex flex-col">
+<div className='flex-grow bg-[url("../images/black girl.jpg")] bg-contain bg-no-repeat bgimg sm:bg-contain md:bg-no-repeat xl:bg-cover bg-center px-16'>
         <Navbar />
 
         {/* end of navbar */}
